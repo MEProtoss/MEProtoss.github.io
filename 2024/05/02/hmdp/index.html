@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>My New Post | CHEN先生的小站</title>
+  <title>hmdp | CHEN先生的小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="天气晴天预报雨天">
+  <meta name="description" content="短信登录发送短信验证码流程提交手机号 -&gt; 校验手机号 -&gt; 生成验证码 -&gt; 保存验证码到session -&gt; 发送验证码 实现短信验证码登录和注册 前台发送的数据格式是json的样式 后台要用@RequestBody接收 用实体类接收 登录成功之后要把用户信息存储到session中 ，session的原理  登录校验 有很多controller都需要校验登录状态，所以引">
 <meta property="og:type" content="article">
-<meta property="og:title" content="My New Post">
-<meta property="og:url" content="http://example.com/2024/05/02/My-New-Post/index.html">
+<meta property="og:title" content="hmdp">
+<meta property="og:url" content="http://example.com/2024/05/02/hmdp/index.html">
 <meta property="og:site_name" content="CHEN先生的小站">
-<meta property="og:description" content="天气晴天预报雨天">
+<meta property="og:description" content="短信登录发送短信验证码流程提交手机号 -&gt; 校验手机号 -&gt; 生成验证码 -&gt; 保存验证码到session -&gt; 发送验证码 实现短信验证码登录和注册 前台发送的数据格式是json的样式 后台要用@RequestBody接收 用实体类接收 登录成功之后要把用户信息存储到session中 ，session的原理  登录校验 有很多controller都需要校验登录状态，所以引">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-05-02T13:52:29.000Z">
-<meta property="article:modified_time" content="2024-05-02T13:54:04.241Z">
+<meta property="article:published_time" content="2024-05-02T13:58:51.000Z">
+<meta property="article:modified_time" content="2024-05-02T13:59:44.787Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="java linux">
 <meta name="twitter:card" content="summary">
@@ -72,10 +72,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-My-New-Post" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-hmdp" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2024/05/02/My-New-Post/" class="article-date">
-  <time class="dt-published" datetime="2024-05-02T13:52:29.000Z" itemprop="datePublished">2024-05-02</time>
+    <a href="/2024/05/02/hmdp/" class="article-date">
+  <time class="dt-published" datetime="2024-05-02T13:58:51.000Z" itemprop="datePublished">2024-05-02</time>
 </a>
     
   </div>
@@ -86,7 +86,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      My New Post
+      hmdp
     </h1>
   
 
@@ -94,11 +94,25 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="天气"><a href="#天气" class="headerlink" title="天气"></a>天气</h1><h2 id="晴天"><a href="#晴天" class="headerlink" title="晴天"></a>晴天</h2><h1 id="预报"><a href="#预报" class="headerlink" title="预报"></a>预报</h1><h2 id="雨天"><a href="#雨天" class="headerlink" title="雨天"></a>雨天</h2>
+        <h1 id="短信登录"><a href="#短信登录" class="headerlink" title="短信登录"></a>短信登录</h1><h2 id="发送短信验证码"><a href="#发送短信验证码" class="headerlink" title="发送短信验证码"></a>发送短信验证码</h2><h3 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h3><p>提交手机号 -&gt; 校验手机号 -&gt; 生成验证码 -&gt; 保存验证码到session -&gt; 发送验证码</p>
+<h2 id="实现短信验证码登录和注册"><a href="#实现短信验证码登录和注册" class="headerlink" title="实现短信验证码登录和注册"></a>实现短信验证码登录和注册</h2><ul>
+<li>前台发送的数据格式是json的样式 后台要用@RequestBody接收 用实体类接收</li>
+<li>登录成功之后要把用户信息存储到session中 ，session的原理</li>
+</ul>
+<h2 id="登录校验"><a href="#登录校验" class="headerlink" title="登录校验"></a>登录校验</h2><ul>
+<li>有很多controller都需要校验登录状态，所以引入spiringmvc中的拦截器</li>
+</ul>
+<h2 id="隐藏用户敏感信息"><a href="#隐藏用户敏感信息" class="headerlink" title="隐藏用户敏感信息"></a>隐藏用户敏感信息</h2><h2 id="集群的session共享问题"><a href="#集群的session共享问题" class="headerlink" title="集群的session共享问题"></a>集群的session共享问题</h2><h2 id="Redis-代替session"><a href="#Redis-代替session" class="headerlink" title="Redis 代替session"></a>Redis 代替session</h2><ul>
+<li>以手机号为key 验证码为value</li>
+<li>使用hash结构保存用户信息到redis key用随机token </li>
+<li>综上 俗称jwt</li>
+<li></li>
+</ul>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/05/02/My-New-Post/" data-id="clvpb4tr90000o4qu0ulg5cqt" data-title="My New Post" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://example.com/2024/05/02/hmdp/" data-id="clvpbc20k0000ojquapxu5nb8" data-title="hmdp" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -108,15 +122,11 @@
     
 <nav id="article-nav">
   
-    <a href="/2024/05/02/hmdp/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">前一篇</strong>
-      <div class="article-nav-title">
-        
-          hmdp
-        
-      </div>
-    </a>
   
+    <a href="/2024/05/02/My-New-Post/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">My New Post</div>
+    </a>
   
 </nav>
 
