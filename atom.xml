@@ -6,7 +6,7 @@
   <link href="http://www.meprotoss.com/atom.xml" rel="self"/>
   
   <link href="http://www.meprotoss.com/"/>
-  <updated>2024-05-08T15:17:52.576Z</updated>
+  <updated>2024-05-08T16:09:44.776Z</updated>
   <id>http://www.meprotoss.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://www.meprotoss.com/undefined/9ac696fa.html"/>
     <id>http://www.meprotoss.com/undefined/9ac696fa.html</id>
     <published>2024-05-08T14:54:02.000Z</published>
-    <updated>2024-05-08T15:17:52.576Z</updated>
+    <updated>2024-05-08T16:09:44.776Z</updated>
     
     <content type="html"><![CDATA[<h2 id="函数式接口-functional-interface"><a href="#函数式接口-functional-interface" class="headerlink" title="函数式接口(functional interface)"></a>函数式接口(functional interface)</h2><p>定义：也称 SAM 接口，即 Single Abstract Method interfaces，有且只有一个抽象方法，但可以有多个非抽象方法的接口。</p><p>在 java 8 中专门有一个包放函数式接口java.util.function，该包下的所有接口都有 @FunctionalInterface 注解，提供函数式编程。在其他包中也有函数式接口，其中一些没有@FunctionalInterface 注解，但是只要符合函数式接口的定义就是函数式接口，与是否有@FunctionalInterface注解无关，注解只是在编译时起到强制规范定义的作用。其在 Lambda 表达式中有广泛的应用。</p><p>基本上，函数式编程是一种编程风格，它将计算看作为是数学函数的求值。</p><p>在数学中，函数是将输入集与输出集相关联的表达式。函数的输出仅取决于其输入。我们也可以将两个或多个函数组合在一起得到一个新函数</p>]]></content>
     
