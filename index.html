@@ -54,7 +54,7 @@
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2024-05-25 11:25:03'
+  postUpdate: '2024-06-09 15:49:49'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -152,7 +152,128 @@
       }
       detectApple()
     })(window)</script><meta name="generator" content="Hexo 7.2.0"><link rel="alternate" href="/atom.xml" title="CHEN先生的小站" type="application/atom+xml">
-</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="CHEN先生的小站"><span class="site-name">CHEN先生的小站</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">CHEN先生的小站</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/undefined/6cac71de.html" title="MySql">MySql</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-05-10T13:52:23.000Z" title="发表于 2024-05-10 21:52:23">2024-05-10</time></span></div><div class="content">单表查询1757可回收且低脂的产品
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">15</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="CHEN先生的小站"><span class="site-name">CHEN先生的小站</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">CHEN先生的小站</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/undefined/3fe50e69.html" title="八股文骚套路之JVM">八股文骚套路之JVM</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-06-08T08:17:53.000Z" title="发表于 2024-06-08 16:17:53">2024-06-08</time></span></div><div class="content">运行时数据区中包含哪些区域？哪些线程共享？哪些线程独享？【⭐⭐⭐⭐⭐】JDK1.7之前的运行时数据区包括 堆、方法区、虚拟机栈、本地方法栈、程序计数器其中堆和方法区是线程共享的；虚拟机栈、本地方法栈和程序计数器是线程私有的。Jdk1.8之后 方法区的实现变成了元空间，和运行时常量池一起被放到了本地内存
+程序计数器可以看作当前线程所执行的字节码文件的行号指示器，实现代码的流程控制，还需要能让线程切换之后能恢复到正确的执行位置，自然是线程私有的
+虚拟机栈除了一些本地方法是在本地方法栈中实现，其他所有java方法的调用都通过虚拟机栈实现的。栈由一个个栈帧组成，每一个方法调用的时候都会有一个栈帧被压入虚拟机栈中，每个栈帧中都保存着局部变量表、操作数栈、动态链接和方法的返回地址。
+局部变量表主要存储编译期间的基本数据类型和对象引用(是指向对象起始地址的引用指针)
+操作数栈用于存放方法执行过程中产生的中间计算结果。
+动态链接主要用于一个方法需要调用其余方法的场景，当一个方法要去调用其他方法，就需要把常量池里指向方法的符号引用转化为内存地址中的直接引用。
+本地方法栈和虚拟机栈类似，只是里面存的是Na ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/undefined/2ca694ee.html" title="八股文骚套路之Java集合">八股文骚套路之Java集合</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-06-08T07:04:20.000Z" title="发表于 2024-06-08 15:04:20">2024-06-08</time></span></div><div class="content">集合概述Java集合，也叫容器主要有两大接口派生而来
+
+Collection
+List(列表):有序可重复
+ArrayList
+Vector
+LinkedList(双向链表)
+
+
+Set(集合)：不可重复&#x2F;唯一
+HashSet(无序唯一)
+LinkedHashSet:底层使用LinkedHashMap实现
+
+
+TreeSet(有序唯一)：红黑树(自平衡排序二叉树)
+
+
+Queue(队列)：特定的排序规则，有序可重复
+
+
+Map(映射 可以多对一，不能一对多)
+HashMap：JdK1.8之前是数组+链表，JdK1.8之后在链表长度大于阈值8的时候会将链表转化为红黑树以减少搜索时间，但是在转化之前还会判断当前的哈希桶数组(用来存键值对的数组)的长度是不是小于64，如果不是，那么会先对数组进行扩容。
+LinkedHashMap:在HashMap的基础上增加了一条双向链表，使HashMap的结构可以保持键值对的插入顺序
+
+
+Hashtable
+SortedMap
+
+
+
+
+[!TIP]在 HashMap 中，主要有一个用于存储键值对的数组，这个数组被称为“哈希桶数组”或“Entry  ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/undefined/df1beea2.html" title="八股文骚套路之Java基础">八股文骚套路之Java基础</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-06-04T13:30:42.000Z" title="发表于 2024-06-04 21:30:42">2024-06-04</time></span></div><div class="content">⭐ ：面试中不常问到，如果面试官问到尽量能答出来，答不出来也没关系。⭐⭐ ：面试中不常问到，但是如果面试官问到的话，答不出来对你的印象会减分。⭐⭐⭐：面试中会问到，答不出来面试有点悬。面试官会惊讶为什么你这也不会。⭐⭐⭐⭐：面试高频考点。⭐⭐⭐⭐⭐：面试超高频考点。四星考点和五星考点是参加十场面试，至少能有五场面试问到这些的。大家在准备面试过程中尽量把这些知识点的回答条理梳理清楚，面试官一问就开背。
+Java 语言的特点⭐️⭐️
+语法简单，上手容易
+面向对象(封装 继承 多态)
+Java 虚拟机实现了 Java 语言的跨平台性
+支持多线程
+可靠(异常处理和自动内存管理机制)、安全(多重安全防护机制如访问权限修饰符、限制程序直接访问操作系统资源)
+高效性(预编译等技术)
+支持网络编程
+编译与解释并存
+
+比较 JVM 和 JDK 以及 JRE ⭐️⭐️⭐️
+JVM(Java Virtual Machine) Java 虚拟机是运行 Java 字节码的虚拟机
+JDK(Java Development Kit) Java 开发工具包，提供 Java 的开发环境，包含 JRE
+JRE(Java  ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/undefined/326450ee.html" title="Charles抓包测试工具">Charles抓包测试工具</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-05-28T09:26:09.000Z" title="发表于 2024-05-28 17:26:09">2024-05-28</time></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/undefined/829df0fe.html" title="接口自动化测试">接口自动化测试</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-05-28T08:42:41.000Z" title="发表于 2024-05-28 16:42:41">2024-05-28</time></span></div><div class="content">URL(Uniform Resource Locator)统一资源定位符的组成: 协议、域名或ip 、端口号(协议默认端口可省略 常用:80(http)、443(https)) 、 请求路径、参数
+HTTP协议HTTP请求请求行 请求头 请求体
+请求报文中可以没有请求体数据
+HTTP相应状态行 响应头 响应体
+状态行是响应数据的第一行，里面的状态码由三位数字组成，其中第一个数字定义响应类别：
+
+2:成功
+4:客户端错误
+5.服务端错误
+
+接口规范postman实现接口测试拿到一个项目之后,我们是先测业务流程还是先测单模块?
+
+先测试业务流程，确保核心功能正常
+再测试单个模块
+
+如何设计业务流程测试用例?
+根据流程图、找出业务路径
+根据业务路径分析对应的接口请求
+根据业务路径分析对应的接口请求
+
+多消息体数据类型多用来上传文件
+批量执行通过运行测试集的方式批量运行测试用例。
+如何针对单个接口设计测试用例?
+
+正向:必填参数、全部参数
+逆向:空、类型错误、长度错误、规则不符
+
+postman断言作用:让Postman工具代替人工自动判定预期结果和实际结果是否一致
+
+响应状态码断言
+包含指定 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/undefined/322e93bb.html" title="测试基础">测试基础</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-05-25T07:21:22.000Z" title="发表于 2024-05-25 15:21:22">2024-05-25</time></span></div><div class="content">2024-05-25记住测试流程(6个步骤)
+需求分析
+测试计划
+用例设计
+用例执行
+缺陷管理
+测试报告
+
+测试分类(7个)给你一个测试对象 如何设计测试用例？首先分析这个测试对象使用于什么场景(如穷举场景、边界限制场景。。。)，根据场景选择对应的测试方法
+在使用测试用例的过程中，可以用质量模型来思考测试时应该考虑的方面。质量模型从以下几个方面来思考：功能、性能、兼容、易用性、安全
+例题：如何去测试一个花瓶？
+
+功能： 插花、装水、养鱼、种菜
+性能：防摔、耐高温、耐低温、耐腐蚀
+易用：防滑、便携
+属性：长、宽、高、样式、材质
+……
+
+穷举场景使用”等价类划分法”
+重点：有效等价和单个无效等价各取1个即可。
+步骤：
+
+明确需求
+确定有效和无效等价
+根据有效和无效造数据编写用例(划分等价)
+
+重点：
+
+正向用例：一条尽可能覆盖多条
+逆向用例：每一条数据，都是一条单独用例。
+
+针对：
+
+需要有大量数据测试输入，但是没法穷举测试的地方。
+输入框
+下拉列表
+单选复选框
+
+典型代表：页面的输入框类测试。
+边界限制场景步骤:
+1234561、明确需求2、确定有效和无效等价(类型)3、确定边界范围   ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/undefined/6cac71de.html" title="MySql">MySql</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-05-10T13:52:23.000Z" title="发表于 2024-05-10 21:52:23">2024-05-10</time></span></div><div class="content">单表查询1757可回收且低脂的产品
 注意要返回的是什么那么就去select什么
 
 584寻找用户推荐人
@@ -208,84 +329,7 @@ docker 常见命令docker命令图解
 在 java 8 中专门有一个包放函数式接口java.util.function，该包下的所有接口都有 @FunctionalInterface 注解，提供函数式编程。在其他包中也有函数式接口，其中一些没有@FunctionalInterface 注解，但是只要符合函数式接口的定义就是函数式接口，与是否有@FunctionalInterface注解无关，注解只是在编译时起到强制规范定义的作用。其在 Lambda 表达式中有广泛的应用。
 基本上，函数式编程是一种编程风格，它将计算看作为是数学函数的求值。
 在数学中，函数是将输入集与输出集相关联的表达式。函数的输出仅取决于其输入。我们也可以将两个或多个函数组合在一起得到一个新函数
-</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/undefined/c66bafdb.html" title="Linux系统疑难杂症">Linux系统疑难杂症</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-05-07T01:36:08.000Z" title="发表于 2024-05-07 09:36:08">2024-05-07</time></span></div><div class="content">ideaVim中英文输入法切换问题
-安装ideaVimExtension 插件
-.ideavimrc中开启
-
-12set keep-english-in-normalset keep-english-in-normal-and-restore-in-insert
-
-idea中输入法不跟随鼠标的问题问题原因具体问题官方其实七年前就有了（参考 https://youtrack.jetbrains.com/issue/JBR-2460），但是比较坑的是官方也一直没有解决这个问题🐶（此处忍不住吐槽一下哈）。简单来说就是 Idea 的 jre 运行环境一个 bug，导致输入法无法定位到鼠标位置。因此，我们要解决该问题必须要修改 JetBrainsRuntime 的运行代码。
-解决方法
-下载已经修改好的 JRE 环境下载地址
-替换idea目录的JRE
-
-无法识别移动硬盘和U盘问题原因文件系统不兼容
-解决方法12sudo pacman -S ntfs-3g
-</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/undefined/ec262441.html" title="Java常见面试题总结">Java常见面试题总结</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-05-06T10:05:37.000Z" title="发表于 2024-05-06 18:05:37">2024-05-06</time></span></div><div class="content">JavaJava基础概念和知识Java语言的特点Java SE(Standard Edition) VS Java EE(Enterprise Edition)简单来说，Java SE 是 Java 的基础版本，Java EE 是 Java 的高级版本。Java SE 更适合开发桌面应用程序或简单的服务器应用程序，Java EE 更适合开发复杂的企业级应用程序或 Web 应用程序。
-JVM vs JDK vs JRE
-JVM(Java Virtual Machine) Java虚拟机是运行java字节码的虚拟机，是Java的核心，提供了Java的跨平台特性。
-
-JDK(Java Development Kit) Java开发工具包，是Java的开发工具包，提供了Java的开发环境。它包含了 JRE，同时还包含了编译 java 源码的编译器 javac 以及一些其他工具比如 javadoc（文档注释工具）、jdb（调试器）、jconsole（基于 JMX 的可视化监控⼯具）、javap（反编译工具）等等。
-
-JRE(Java Runtime Environment) Java运行时环境， ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/undefined/c6c80d57.html" title="黑马点评项目记录">黑马点评项目记录</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-05-06T09:17:22.000Z" title="发表于 2024-05-06 17:17:22">2024-05-06</time></span></div><div class="content">基于 Session 短信登录发送短信验证码用户提交手机号，服务器生成验证码并保存到session,然后将验证码发给用户
-短信验证码登录和注册用户提交手机号和验证码，服务器先校验验证码，然后根据手机号去数据库查询用户，若不存在，则创建新用户，然后保存用户信息到session
-
-前台发送的数据格式是json的样式 后台要用@RequestBody注解 实现用LoginFormDTO实体类接收
-登录成功之后要把用户信息存储到session中。
-
-登录校验(验证登录状态)用户请求(request)中携带cookie(cookie中带有sessionid,而登录的凭证就是sessionid就保存在cookie中)
-服务器从session中获取用户 获取到之后将用户缓存到ThreadLocal中,方便后续的使用
-
-[!TIP]在业务中用户的每个请求都是一个独立的线程，所以不能将用户信息保存到本地变量中，这样会出现多线程并发修改的安全问题，因此要使用ThreadLocal技术
-
-登录拦截校验功能
-⚠️有有很多controller(业务)都需要校验登录状态，不能在每一个controller中都写一遍 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/undefined/38bc4ed6.html" title="Spring6启示录">Spring6启示录</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-05-06T08:41:30.000Z" title="发表于 2024-05-06 16:41:30">2024-05-06</time></span></div><div class="content">
-[!TIP]基于动力节点spring6总结
-
-Spring启示录OCP开闭原则在软件开发过程中应当对扩展开放，对修改关闭
-依赖倒置
-Dependence Inversion Principle(DIP)
-
-要倡导面向抽象编程，面向接口编程，不要面向具体编程，让上层不再依赖下层，下面改动了，上面的代码不会受到牵连。这样可以大大降低程序的耦合度，耦合度低了，扩展力就强了，同时代码复用性也会增强。（软件七大开发原则都是在为解耦合服务）
-
-Spring框架可以帮助我们创建对象，并且可以帮助我们维护对象和对象之间的关系
-
-Spring其实就是一个管理Bean对象的工厂
-
-
-控制反转
-Inversion of Control(IoC)
-
-控制反转的核心是：将对象的创建权交出去，将对象和对象之间关系的管理权交出去，由第三方容器来负责创建与维护。
-
-控制反转常见的实现方式：依赖注入（Dependency Injection，简称DI。
-
-Spring概述spring &#x3D; IOC + AOP(面向切面编程)
-Spring8大模块Spring 特点
-轻量  a. 小  b. 非侵入式：Spri ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/undefined/d3855f56.html" title="测试开发学习路线">测试开发学习路线</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-05-06T08:34:53.000Z" title="发表于 2024-05-06 16:34:53">2024-05-06</time></span></div><div class="content">一、编程语言入门
- java
-
-二、基础计算机基础
- 数据结构与算法
- 计算机网络
- linux
- mysql 重点是sql语句的编写
-
-测试基础
- 测试工具
- 功能测试基础
-
-三、进阶开发
- 后端web开发
- 自动化测试
-
-项目实战
- 开发项目实战
-
-
-[!TIP]应届校招以准备开发项目实战为佳,而不是测试项目
-
-</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Mr.Chen</div><div class="author-info__description">毕竟几人终得鹿 不知终日梦为鱼</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined/6cac71de.html" title="MySql">MySql</a><time datetime="2024-05-10T13:52:23.000Z" title="发表于 2024-05-10 21:52:23">2024-05-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined/b7e144d1.html" title="算法">算法</a><time datetime="2024-05-10T13:37:57.000Z" title="发表于 2024-05-10 21:37:57">2024-05-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined/5c266b64.html" title="Docker笔记">Docker笔记</a><time datetime="2024-05-10T03:33:55.000Z" title="发表于 2024-05-10 11:33:55">2024-05-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined/9ac696fa.html" title="Java新特性">Java新特性</a><time datetime="2024-05-08T14:54:02.000Z" title="发表于 2024-05-08 22:54:02">2024-05-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined/c66bafdb.html" title="Linux系统疑难杂症">Linux系统疑难杂症</a><time datetime="2024-05-07T01:36:08.000Z" title="发表于 2024-05-07 09:36:08">2024-05-07</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/05/"><span class="card-archive-list-date">五月 2024</span><span class="card-archive-list-count">9</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">9</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-05-25T03:25:03.138Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Mr.Chen</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.8/dist/lazyload.iife.min.js"></script><div class="js-pjax"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/metingjs/dist/Meting.min.js"></script><div class="app-refresh" id="app-refresh" style="position: fixed;top: -2.2rem;left: 0;right: 0;z-index: 99999;padding: 0 1rem;font-size: 15px;height: 2.2rem;transition: all 0.3s ease;"><div class="app-refresh-wrap" style=" display: flex;color: #fff;height: 100%;align-items: center;justify-content: center;"><label>✨ 有新文章啦！ 👉</label><a href="javascript:void(0)" onclick="location.reload()"><span style="color: #fff;text-decoration: underline;cursor: pointer;">🍗点击食用🍔</span></a></div></div><script>if ('serviceWorker' in navigator) {
+</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Mr.Chen</div><div class="author-info__description">毕竟几人终得鹿 不知终日梦为鱼</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">15</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined/3fe50e69.html" title="八股文骚套路之JVM">八股文骚套路之JVM</a><time datetime="2024-06-08T08:17:53.000Z" title="发表于 2024-06-08 16:17:53">2024-06-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined/2ca694ee.html" title="八股文骚套路之Java集合">八股文骚套路之Java集合</a><time datetime="2024-06-08T07:04:20.000Z" title="发表于 2024-06-08 15:04:20">2024-06-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined/df1beea2.html" title="八股文骚套路之Java基础">八股文骚套路之Java基础</a><time datetime="2024-06-04T13:30:42.000Z" title="发表于 2024-06-04 21:30:42">2024-06-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined/326450ee.html" title="Charles抓包测试工具">Charles抓包测试工具</a><time datetime="2024-05-28T09:26:09.000Z" title="发表于 2024-05-28 17:26:09">2024-05-28</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined/829df0fe.html" title="接口自动化测试">接口自动化测试</a><time datetime="2024-05-28T08:42:41.000Z" title="发表于 2024-05-28 16:42:41">2024-05-28</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/06/"><span class="card-archive-list-date">六月 2024</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/05/"><span class="card-archive-list-date">五月 2024</span><span class="card-archive-list-count">12</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">15</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-06-09T07:49:49.638Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Mr.Chen</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.8/dist/lazyload.iife.min.js"></script><div class="js-pjax"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/metingjs/dist/Meting.min.js"></script><div class="app-refresh" id="app-refresh" style="position: fixed;top: -2.2rem;left: 0;right: 0;z-index: 99999;padding: 0 1rem;font-size: 15px;height: 2.2rem;transition: all 0.3s ease;"><div class="app-refresh-wrap" style=" display: flex;color: #fff;height: 100%;align-items: center;justify-content: center;"><label>✨ 有新文章啦！ 👉</label><a href="javascript:void(0)" onclick="location.reload()"><span style="color: #fff;text-decoration: underline;cursor: pointer;">🍗点击食用🍔</span></a></div></div><script>if ('serviceWorker' in navigator) {
 if (navigator.serviceWorker.controller) {
 navigator.serviceWorker.addEventListener('controllerchange', function() {
 showNotification()
