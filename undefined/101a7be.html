@@ -1,0 +1,255 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>八股文骚套路之计算机网络 | CHEN先生的小站</title><meta name="author" content="Mr.Chen"><meta name="copyright" content="Mr.Chen"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="面试过程中偏向与应用，所以问的比较多的也就是应用层、运输层、网络层的协议，物理层和数据链路层的东西面试基本不会被问到，所以准备面试过程中这块就不用看了。八股-网络协议 OSI七层模型物理层 数据链路层 网络层 传输层 会话层 表示层 应用层 物理层 数据链路层 网络层 传输层 应用层 在搜索框输入www.baidu.com，发生了什么？ 在浏览器中输入指定网页的 URL。 浏览器通过 DNS 协议">
+<meta property="og:type" content="article">
+<meta property="og:title" content="八股文骚套路之计算机网络">
+<meta property="og:url" content="http://www.meprotoss.com/undefined/101a7be.html">
+<meta property="og:site_name" content="CHEN先生的小站">
+<meta property="og:description" content="面试过程中偏向与应用，所以问的比较多的也就是应用层、运输层、网络层的协议，物理层和数据链路层的东西面试基本不会被问到，所以准备面试过程中这块就不用看了。八股-网络协议 OSI七层模型物理层 数据链路层 网络层 传输层 会话层 表示层 应用层 物理层 数据链路层 网络层 传输层 应用层 在搜索框输入www.baidu.com，发生了什么？ 在浏览器中输入指定网页的 URL。 浏览器通过 DNS 协议">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2024-06-09T08:34:15.000Z">
+<meta property="article:modified_time" content="2024-06-11T09:44:36.363Z">
+<meta property="article:author" content="Mr.Chen">
+<meta property="article:tag" content="博客,CHEN,MEProtoss">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://www.meprotoss.com/undefined/101a7be.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="manifest" href="/manifest.json"/><meta name="msapplication-TileColor" content="#3b70fc"/><link rel="apple-touch-icon" sizes="180x180" href="/img/siteicon/128.png"/><link rel="icon" type="image/png" sizes="32x32" href="/img/siteicon/32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/img/siteicon/16.png"/><link rel="mask-icon" href="/img/siteicon/128.png" color="#5bbad5"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '八股文骚套路之计算机网络',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-06-11 17:44:36'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.2.0"><link rel="alternate" href="/atom.xml" title="CHEN先生的小站" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">18</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="CHEN先生的小站"><span class="site-name">CHEN先生的小站</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">八股文骚套路之计算机网络</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-06-09T08:34:15.000Z" title="发表于 2024-06-09 16:34:15">2024-06-09</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-06-11T09:44:36.363Z" title="更新于 2024-06-11 17:44:36">2024-06-11</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="八股文骚套路之计算机网络"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>面试过程中偏向与应用，所以问的比较多的也就是应用层、运输层、网络层的协议，物理层和数据链路层的东西面试基本不会被问到，所以准备面试过程中这块就不用看了。<br><a target="_blank" rel="noopener" href="https://mubu.com/app/edit/home/4IsX074ceSC">八股-网络协议</a></p>
+<h2 id="OSI七层模型"><a href="#OSI七层模型" class="headerlink" title="OSI七层模型"></a>OSI七层模型</h2><p>物理层 数据链路层 网络层 传输层 会话层 表示层 应用层</p>
+<p>物理层 数据链路层 网络层 传输层 应用层</p>
+<h2 id="在搜索框输入www-baidu-com，发生了什么？"><a href="#在搜索框输入www-baidu-com，发生了什么？" class="headerlink" title="在搜索框输入www.baidu.com，发生了什么？"></a>在搜索框输入<a href="http://www.baidu.com，发生了什么？">www.baidu.com，发生了什么？</a></h2><ol>
+<li>在浏览器中输入指定网页的 URL。</li>
+<li>浏览器通过 DNS 协议，获取域名对应的 IP 地址。</li>
+<li>浏览器根据 IP 地址和端口号，向目标服务器发起一个 TCP 连接请求。</li>
+<li>TCP连接建立之后，浏览器在 TCP 连接上，向服务器发送一个 HTTP 请求报文，请求获取网页的内容。</li>
+<li>服务器收到 HTTP 请求报文后，处理请求，并返回 HTTP 响应报文给浏览器。</li>
+<li>浏览器收到 HTTP 响应报文后，解析响应体中的 HTML 代码，渲染网页的结构和样式，同时根据 HTML 中的其他资源的 URL（如图片、CSS、JS 等），再次发起 HTTP 请求，获取这些资源的内容，直到网页完全加载显示。</li>
+<li>浏览器在不需要和服务器通信时，可以主动关闭 TCP 连接，或者等待服务器的关闭请求。</li>
+</ol>
+<h2 id="http-和-https-的区别"><a href="#http-和-https-的区别" class="headerlink" title="http 和 https 的区别"></a>http 和 https 的区别</h2><p>http 超文本传输协议，明文传输 基于请求和响应 无状态 应用层协议 端口80<br>https http + ssl 加密性质的SSL加密传输协议 由http通信，利用ssl&#x2F;tls建立信道 端口443 需要证书</p>
+<h2 id="http-请求报文"><a href="#http-请求报文" class="headerlink" title="http 请求报文"></a>http 请求报文</h2><ul>
+<li>请求方法</li>
+<li>GET: 请求<strong>获取</strong>request——URL所标识的资源</li>
+<li>POST：在Request——URL所标识的资源后附加资源(向指定的资源<strong>提交</strong>要被处理的数据)</li>
+<li>HEAD：请求获取由Request——URL所标识的资源的响应消息报头</li>
+<li>PUT：请求服务器存储一个资源，由Request——URL作为其标识  </li>
+<li>DELETE：请求服务器删除由Request——URL所标识的资源</li>
+<li>TRACE：请求服务器回送收到的请求信息（用于测试和诊断）</li>
+<li>CONNECT：保留 </li>
+<li>OPTIONS：请求查询服务器性能</li>
+</ul>
+<h2 id="http-状态码"><a href="#http-状态码" class="headerlink" title="http 状态码"></a>http 状态码</h2><p>状态码是用于表示网页服务器HTTP响应状态的3位数字代码</p>
+<p>1xx:请求被成功接收<br>2xx:请求被成功处理<br>3xx:重定向相关<br>4xx:客户端错误<br>5xx:服务器端错误</p>
+<h2 id="TCP-和-UDP-的区别"><a href="#TCP-和-UDP-的区别" class="headerlink" title="TCP 和 UDP 的区别"></a>TCP 和 UDP 的区别</h2><ul>
+<li>面向连接:传输数据之前是否要建立连接</li>
+<li>可靠传输:收到报文之后是否需要确认，是否需要保证数据的不丢失和顺序到达</li>
+<li>是否有状态:是否记录自己发送的消息被接受了等等</li>
+<li>传输效率:</li>
+<li>传输形式:tcp面向字节流，udp面向报文</li>
+<li>首部开销:</li>
+<li>广播或多播:tcp只支持点对点，udp支持一对一一对多多对一</li>
+</ul>
+<h2 id="tcp为什么可靠"><a href="#tcp为什么可靠" class="headerlink" title="tcp为什么可靠"></a>tcp为什么可靠</h2><ul>
+<li>确认和重传机制:建立连接时三次握手同步双方的“序列号 + 确认号 + 窗口大小信息”，是确认重传、流控的基础</li>
+<li>数据排序:TCP有专门的序列号SN字段，可提供数据re-order</li>
+<li>流量控制:滑动窗口和计时器的使用。TCP窗口中会指明双方能够发送接收的最大数据量，发送方通过维持一个发送滑动窗口来确保不会发生由于发送方报文发送太快接收方无法及时处理的问题。</li>
+<li>拥塞控制:TCP的拥塞控制由4个核心算法组成:“慢启动” “拥塞避免”  “快速重传 ”  “快速恢复”</li>
+</ul>
+<h2 id="cookie-和-session-的区别"><a href="#cookie-和-session-的区别" class="headerlink" title="cookie 和 session 的区别"></a>cookie 和 session 的区别</h2><pre><code>cookie和session都是会话技术，cookie是运行在客户端，session是运行在服务器端
+cookie有安全隐患，通过拦截或本地文件找得到你的cookie后可以进行攻击
+session是保存在服务器端上会存在一段时间后消失，如果session过多会增加服务器的压力
+</code></pre>
+<h2 id="IP-地址和-Mac-地址的区别，了解-ARP-地址解析协议并了解其工作原理。"><a href="#IP-地址和-Mac-地址的区别，了解-ARP-地址解析协议并了解其工作原理。" class="headerlink" title="IP 地址和 Mac 地址的区别，了解 ARP 地址解析协议并了解其工作原理。"></a>IP 地址和 Mac 地址的区别，了解 ARP 地址解析协议并了解其工作原理。</h2><p>互联网中的每一个资源都有一个ip地址，而一切网络设备都有一个唯一mac地址 ,ip地址是一种不重复的定位方式</p>
+<p>mac地址是永久的，而ip可能会随着网络的更换而变化</p>
+<p>arp(address resolution protocol)地址解析协议。解决了ip地址转mac地址的问题</p>
+<h2 id="建立连接TCP三次握手和断开连接TCP四次挥手。"><a href="#建立连接TCP三次握手和断开连接TCP四次挥手。" class="headerlink" title="建立连接TCP三次握手和断开连接TCP四次挥手。"></a>建立连接TCP三次握手和断开连接TCP四次挥手。</h2><h3 id="三次握手"><a href="#三次握手" class="headerlink" title="三次握手"></a>三次握手</h3><p>第一次握手<br>    建立连接时，客户端发送syn包（syn&#x3D;j）到服务器，并进入SYN_SENT状态，等待服务器确认。SYN：同步序列编号(客户端发送同步请求等待服务器确认)<br>第二次握手<br>    服务器收到SYN包，必须确认客户的SYN(ack&#x3D;j+1),同时自己也发送一个SYN包(syn&#x3D;k)，即SYN+ACK包，此时服务器进入SYN_RECV状态(服务器收到请求同意建立连接，告诉客户端自己同意)<br>第三次握手<br>    客户端收到服务器的SYN+ACK包，向服务器发送确认包ACK(ACK&#x3D;K+1)，此包发送完毕，客户端和服务器进入ESTABLISHED（TCP连接成功）状态(客户端告诉服务端自己知道你同意了于是开启了连接，)</p>
+<h3 id="为什么要三次握手"><a href="#为什么要三次握手" class="headerlink" title="为什么要三次握手?"></a>为什么要三次握手?</h3><p>主要就是用来确认自己和对方的接受和发送都正常</p>
+<ol>
+<li>第一次握手：Client 什么都不能确认；Server 确认了对方发送正常，自己接收正常</li>
+<li>第二次握手：Client 确认了：自己发送、接收正常，对方发送、接收正常；Server 确认了：对方发送正常，自己接收正常</li>
+<li>第三次握手：Client 确认了：自己发送、接收正常，对方发送、接收正常；Server 确认了：自己发送、接收正常，对方发送、接收正常</li>
+</ol>
+<h3 id="四次挥手"><a href="#四次挥手" class="headerlink" title="四次挥手"></a>四次挥手</h3><p>断开一个 TCP 连接则需要“四次挥手”，缺一不可：</p>
+<p>第一次挥手：客户端发送一个 FIN（SEQ&#x3D;x） 标志的数据包-&gt;服务端，用来关闭客户端到服务端的<strong>数据传送</strong>。然后客户端进入 FIN-WAIT-1 状态。<br>第二次挥手：服务端收到这个 FIN（SEQ&#x3D;X） 标志的数据包，它发送一个 ACK （ACK&#x3D;x+1）标志的数据包-&gt;客户端 。然后服务端进入 CLOSE-WAIT 状态，客户端进入 FIN-WAIT-2 状态。<br>第三次挥手：服务端发送一个 FIN (SEQ&#x3D;y)标志的数据包-&gt;客户端，请求关闭连接，然后服务端进入 LAST-ACK 状态。<br>第四次挥手：客户端发送 ACK (ACK&#x3D;y+1)标志的数据包-&gt;服务端，然后客户端进入TIME-WAIT状态，服务端在收到 ACK (ACK&#x3D;y+1)标志的数据包后进入 CLOSE 状态。此时如果客户端等待 2MSL 后依然没有收到回复，就证明服务端已正常关闭，随后客户端也可以关闭连接了</p>
+<p>第一次挥手：A 说“我没啥要说的了”<br>第二次挥手：B 回答“我知道了”，但是 B 可能还会有要说的话，A 不能要求 B 跟着自己的节奏结束通话<br>第三次挥手：于是 B 可能又巴拉巴拉说了一通，最后 B 说“我说完了”<br>第四次挥手：A 回答“知道了”，这样通话才算结束。</p>
+<h2 id="DNS域名系统"><a href="#DNS域名系统" class="headerlink" title="DNS域名系统"></a>DNS域名系统</h2><p>DNS 要解决的是域名和 IP 地址的映射问题。</p>
+<p>DNS域名服务器分为四种：本地、权威、顶级、根</p>
+<p>DNS有两种查询解析方法：迭达和递归</p>
+<p>常用的方法是从请求主机到本地 DNS 服务器的查询是递归的，其余的查询时迭代的。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://www.meprotoss.com">Mr.Chen</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://www.meprotoss.com/undefined/101a7be.html">http://www.meprotoss.com/undefined/101a7be.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://www.meprotoss.com" target="_blank">CHEN先生的小站</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/undefined/faaf69f9.html" title="八股文骚套路之数据结构"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">八股文骚套路之数据结构</div></div></a></div><div class="next-post pull-right"><a href="/undefined/3fe50e69.html" title="八股文骚套路之JVM"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">八股文骚套路之JVM</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Mr.Chen</div><div class="author-info__description">毕竟几人终得鹿 不知终日梦为鱼</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">18</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#OSI%E4%B8%83%E5%B1%82%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.</span> <span class="toc-text">OSI七层模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%A8%E6%90%9C%E7%B4%A2%E6%A1%86%E8%BE%93%E5%85%A5www-baidu-com%EF%BC%8C%E5%8F%91%E7%94%9F%E4%BA%86%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">2.</span> <span class="toc-text">在搜索框输入www.baidu.com，发生了什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#http-%E5%92%8C-https-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">3.</span> <span class="toc-text">http 和 https 的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#http-%E8%AF%B7%E6%B1%82%E6%8A%A5%E6%96%87"><span class="toc-number">4.</span> <span class="toc-text">http 请求报文</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#http-%E7%8A%B6%E6%80%81%E7%A0%81"><span class="toc-number">5.</span> <span class="toc-text">http 状态码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TCP-%E5%92%8C-UDP-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">6.</span> <span class="toc-text">TCP 和 UDP 的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#tcp%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8F%AF%E9%9D%A0"><span class="toc-number">7.</span> <span class="toc-text">tcp为什么可靠</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cookie-%E5%92%8C-session-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">8.</span> <span class="toc-text">cookie 和 session 的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IP-%E5%9C%B0%E5%9D%80%E5%92%8C-Mac-%E5%9C%B0%E5%9D%80%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%8C%E4%BA%86%E8%A7%A3-ARP-%E5%9C%B0%E5%9D%80%E8%A7%A3%E6%9E%90%E5%8D%8F%E8%AE%AE%E5%B9%B6%E4%BA%86%E8%A7%A3%E5%85%B6%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E3%80%82"><span class="toc-number">9.</span> <span class="toc-text">IP 地址和 Mac 地址的区别，了解 ARP 地址解析协议并了解其工作原理。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BB%BA%E7%AB%8B%E8%BF%9E%E6%8E%A5TCP%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%92%8C%E6%96%AD%E5%BC%80%E8%BF%9E%E6%8E%A5TCP%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B%E3%80%82"><span class="toc-number">10.</span> <span class="toc-text">建立连接TCP三次握手和断开连接TCP四次挥手。</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B"><span class="toc-number">10.1.</span> <span class="toc-text">三次握手</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B"><span class="toc-number">10.2.</span> <span class="toc-text">为什么要三次握手?</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B"><span class="toc-number">10.3.</span> <span class="toc-text">四次挥手</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DNS%E5%9F%9F%E5%90%8D%E7%B3%BB%E7%BB%9F"><span class="toc-number">11.</span> <span class="toc-text">DNS域名系统</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined/2d72da9e.html" title="八股文骚套路之操作系统">八股文骚套路之操作系统</a><time datetime="2024-06-09T08:46:47.000Z" title="发表于 2024-06-09 16:46:47">2024-06-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined/faaf69f9.html" title="八股文骚套路之数据结构">八股文骚套路之数据结构</a><time datetime="2024-06-09T08:40:58.000Z" title="发表于 2024-06-09 16:40:58">2024-06-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined/101a7be.html" title="八股文骚套路之计算机网络">八股文骚套路之计算机网络</a><time datetime="2024-06-09T08:34:15.000Z" title="发表于 2024-06-09 16:34:15">2024-06-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined/3fe50e69.html" title="八股文骚套路之JVM">八股文骚套路之JVM</a><time datetime="2024-06-08T08:17:53.000Z" title="发表于 2024-06-08 16:17:53">2024-06-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined/2ca694ee.html" title="八股文骚套路之Java集合">八股文骚套路之Java集合</a><time datetime="2024-06-08T07:04:20.000Z" title="发表于 2024-06-08 15:04:20">2024-06-08</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Mr.Chen</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.8/dist/lazyload.iife.min.js"></script><div class="js-pjax"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/metingjs/dist/Meting.min.js"></script><div class="app-refresh" id="app-refresh" style="position: fixed;top: -2.2rem;left: 0;right: 0;z-index: 99999;padding: 0 1rem;font-size: 15px;height: 2.2rem;transition: all 0.3s ease;"><div class="app-refresh-wrap" style=" display: flex;color: #fff;height: 100%;align-items: center;justify-content: center;"><label>✨ 有新文章啦！ 👉</label><a href="javascript:void(0)" onclick="location.reload()"><span style="color: #fff;text-decoration: underline;cursor: pointer;">🍗点击食用🍔</span></a></div></div><script>if ('serviceWorker' in navigator) {
+if (navigator.serviceWorker.controller) {
+navigator.serviceWorker.addEventListener('controllerchange', function() {
+showNotification()
+})
+}
+window.addEventListener('load', function() {
+navigator.serviceWorker.register('/sw.js')
+})
+}
+function showNotification() {
+if (GLOBAL_CONFIG.Snackbar) {
+var snackbarBg =
+document.documentElement.getAttribute('data-theme') === 'light' ?
+GLOBAL_CONFIG.Snackbar.bgLight :
+GLOBAL_CONFIG.Snackbar.bgDark
+var snackbarPos = GLOBAL_CONFIG.Snackbar.position
+Snackbar.show({
+text: '✨ 有新文章啦！ 👉',
+backgroundColor: snackbarBg,
+duration: 500000,
+pos: snackbarPos,
+actionText: '🍗点击食用🍔',
+actionTextColor: '#fff',
+onActionClick: function(e) {
+location.reload()
+},
+})
+} else {
+var showBg =
+document.documentElement.getAttribute('data-theme') === 'light' ?
+'#3b70fc' :
+'#1f1f1f'
+var cssText = `top: 0; background: ${showBg};`
+document.getElementById('app-refresh').style.cssText = cssText
+}
+}</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body></html>
