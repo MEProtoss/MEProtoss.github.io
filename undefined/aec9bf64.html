@@ -1,0 +1,453 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>八股文骚套路之测开 | CHEN先生的小站</title><meta name="author" content="Mr.Chen"><meta name="copyright" content="Mr.Chen"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="常用自动话测试工具Selenium **Web自动化测试 Postman ***接口测试 Jmeter ***Jenkins手机兼容性测试 系统兼容性 屏幕兼容性 型号兼容性 数据来源  软件开发流程 需求分析 指定测试计划 用例设计 用例执行 缺陷管理 测试报告  软件测试方法 ***** 软件测试方法：白盒、黑盒(功能测试)、灰盒、 静态测试、动态测试  白盒测试一般可被分为静态分析和动态分析">
+<meta property="og:type" content="article">
+<meta property="og:title" content="八股文骚套路之测开">
+<meta property="og:url" content="http://www.meprotoss.com/undefined/aec9bf64.html">
+<meta property="og:site_name" content="CHEN先生的小站">
+<meta property="og:description" content="常用自动话测试工具Selenium **Web自动化测试 Postman ***接口测试 Jmeter ***Jenkins手机兼容性测试 系统兼容性 屏幕兼容性 型号兼容性 数据来源  软件开发流程 需求分析 指定测试计划 用例设计 用例执行 缺陷管理 测试报告  软件测试方法 ***** 软件测试方法：白盒、黑盒(功能测试)、灰盒、 静态测试、动态测试  白盒测试一般可被分为静态分析和动态分析">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2024-06-23T12:07:23.000Z">
+<meta property="article:modified_time" content="2024-06-23T13:29:10.126Z">
+<meta property="article:author" content="Mr.Chen">
+<meta property="article:tag" content="博客,CHEN,MEProtoss">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://www.meprotoss.com/undefined/aec9bf64.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="manifest" href="/manifest.json"/><meta name="msapplication-TileColor" content="#3b70fc"/><link rel="apple-touch-icon" sizes="180x180" href="/img/siteicon/128.png"/><link rel="icon" type="image/png" sizes="32x32" href="/img/siteicon/32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/img/siteicon/16.png"/><link rel="mask-icon" href="/img/siteicon/128.png" color="#5bbad5"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '八股文骚套路之测开',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-06-23 21:29:10'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.2.0"><link rel="alternate" href="/atom.xml" title="CHEN先生的小站" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">23</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="CHEN先生的小站"><span class="site-name">CHEN先生的小站</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">八股文骚套路之测开</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-06-23T12:07:23.000Z" title="发表于 2024-06-23 20:07:23">2024-06-23</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-06-23T13:29:10.126Z" title="更新于 2024-06-23 21:29:10">2024-06-23</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="八股文骚套路之测开"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="常用自动话测试工具"><a href="#常用自动话测试工具" class="headerlink" title="常用自动话测试工具"></a>常用自动话测试工具</h2><h3 id="Selenium"><a href="#Selenium" class="headerlink" title="Selenium **"></a>Selenium **</h3><p>Web自动化测试</p>
+<h3 id="Postman"><a href="#Postman" class="headerlink" title="Postman ***"></a>Postman ***</h3><p>接口测试</p>
+<h3 id="Jmeter"><a href="#Jmeter" class="headerlink" title="Jmeter ***"></a>Jmeter ***</h3><h3 id="Jenkins"><a href="#Jenkins" class="headerlink" title="Jenkins"></a>Jenkins</h3><h2 id="手机兼容性测试"><a href="#手机兼容性测试" class="headerlink" title="手机兼容性测试"></a>手机兼容性测试</h2><ul>
+<li>系统兼容性</li>
+<li>屏幕兼容性</li>
+<li>型号兼容性</li>
+<li>数据来源</li>
+</ul>
+<h2 id="软件开发流程"><a href="#软件开发流程" class="headerlink" title="软件开发流程"></a>软件开发流程</h2><ul>
+<li>需求分析</li>
+<li>指定测试计划</li>
+<li>用例设计</li>
+<li>用例执行</li>
+<li>缺陷管理</li>
+<li>测试报告</li>
+</ul>
+<h2 id="软件测试方法"><a href="#软件测试方法" class="headerlink" title="软件测试方法 *****"></a>软件测试方法 *****</h2><ol>
+<li>软件测试方法：白盒、黑盒(功能测试)、灰盒、 静态测试、动态测试</li>
+</ol>
+<p>白盒测试一般可被分为静态分析和动态分析两类技术：</p>
+<ul>
+<li>静态分析主要有：控制流分析技术、数据流分析技术、信息流分析技术。</li>
+<li>动态分析主要有：逻辑覆盖率测试(分支测试、路径测试等)，程序插装等。</li>
+<li>白盒测试优点：迫使测试人员去仔细的思考软件的实现；可以检测代码中的每条分支和路径；揭示隐藏在代码中的错误；对代码的测试比较彻底</li>
+<li>白盒测试缺点：昂贵；无法检测代码中遗漏的路径和数据敏感性错误；不验证规格的正确性。</li>
+</ul>
+<p>静态测试：是一种不通过执行程序而进行测试的技术。它的关键功能是检查软件的表示和描述是否一致，没有冲突或者没有歧义</p>
+<p>动态测试：包含了程序在受控的环境下使用特定的期望结果进行正式的运行。它显示了一个系统在检查状态下是正确还是不正确。<br> 单元测试属于白盒测试范畴；集成测试属于灰盒测试范畴；系统测试属于黑盒测试范畴。</p>
+<h2 id="CI-CD理解"><a href="#CI-CD理解" class="headerlink" title="CI&#x2F;CD理解 *****"></a>CI&#x2F;CD理解 *****</h2><ul>
+<li>CI(Continuous Integration)持续集成</li>
+</ul>
+<p>持续集成强调开发人员提交了新代码之后，立刻进行构建、（单元）测试。根据测试结果，我们可以确定新代码和原有代码能否正确地集成在一起。<br><strong>集成</strong>是指软件个人研发的部分向软件整体部分交付，以便尽早发现个人开发部分的问题；</p>
+<ul>
+<li><p>CD(Continuous Delivery)持续交付<br>持续交付在持续集成的基础上，将集成后的代码部署到更贴近真实运行环境的「类生产环境」（production-like environments）中。比如，我们完成单元测试后，可以把代码部署到连接数据库的 Staging 环境中更多的测试。如果代码没有问题，可以继续手动部署到生产环境中。<br><strong>交付</strong>是指研发尽快向客户交付，以便尽早发现生产环境中存在的问题。</p>
+</li>
+<li><p>CD(Continuous Deployment)持续部署<br>持续部署则是在持续交付的基础上，把部署到生产环境的过程自动化。<br><strong>部署</strong>是代码尽快向可运行的开发&#x2F;测试节交付，以便尽早测试；</p>
+</li>
+</ul>
+<p>所谓的<strong>持续</strong>，就是说每完成一个完整的部分，就向下个环节交付，发现问题可以马上调整。是的问题不会放大到其他部分和后面的环节。</p>
+<h2 id="单元测试"><a href="#单元测试" class="headerlink" title="单元测试 ***"></a>单元测试 ***</h2><p>单元测试是指，对软件中的<strong>最小可测试单元</strong>在与程序其他部分相隔离的情况下进行检查和验证的工作，这里的最小可测试单元通常是指<strong>函数或者类</strong>。</p>
+<h2 id="时间紧任务重不能加人的情况怎么尽最大努力测试"><a href="#时间紧任务重不能加人的情况怎么尽最大努力测试" class="headerlink" title="时间紧任务重不能加人的情况怎么尽最大努力测试?"></a>时间紧任务重不能加人的情况怎么尽最大努力测试?</h2><p>答：1. 不写测试用例，先和产品人员沟通覆盖主要业务，选出重要的模块先正向后逆向2. 可以使用错误推荐法<strong>根据经验复测</strong>。</p>
+<h2 id="任何测试都应该先走业务"><a href="#任何测试都应该先走业务" class="headerlink" title="任何测试都应该先走业务"></a>任何测试都应该先走<strong>业务</strong></h2><p>而测业务需要使用场景法</p>
+<h2 id="针对某一个产品写测试用例"><a href="#针对某一个产品写测试用例" class="headerlink" title="针对某一个产品写测试用例 *****"></a>针对某一个产品写测试用例 *****</h2><p>基本思路：可以从功能测试，UI测试，稳定性测试，压力测试（边界极限），安全测试，本地化测试等角度去考虑</p>
+<p>质量模型：性功能已可健全 （性能、功能、易用性、可靠性、兼容性、安全性</p>
+<p><strong>首先应从正向和逆向考虑功能</strong></p>
+<h3 id="测试水杯"><a href="#测试水杯" class="headerlink" title="测试水杯 *"></a>测试水杯 *</h3><ol>
+<li>基本功能<br>硬度、装载能力、装载种类、漏水、冷水&#x2F;热水&#x2F;冰水、保温</li>
+<li>界面测试(UI)<br>看其形状、大小设计是否符合需求规格说明书的定义，适合人方便拿起喝水；<br>外观是否吸引人，赏心悦目；<br>广告图案沾水后是否掉色、模糊；<br>广告图案是否使用环保材料、不影响使用者健康和回收再利用；<br>广告图案是否和当地政治、宗教符合，没有冲突；<br>广告图案是否做到了本地化和国际化。</li>
+<li>易用性测试</li>
+<li>稳定性测试</li>
+<li>安全性</li>
+<li>本地化测试<br>为国际化和本地化的需要，广告图案和文字是否在政治、宗教和文化方面具有广泛的适用性；</li>
+<li>性能测试</li>
+</ol>
+<h3 id="测试一个输入框-计数"><a href="#测试一个输入框-计数" class="headerlink" title="测试一个输入框(计数) **"></a>测试一个输入框(计数) **</h3><p>通常是一个登陆页面，上面有用户名，密码的输入框，再多一点的有个验证码。</p>
+<h3 id="针对“用户登录”设计测试用例"><a href="#针对“用户登录”设计测试用例" class="headerlink" title="针对“用户登录”设计测试用例 ***"></a>针对“用户登录”设计测试用例 ***</h3><h4 id="功能测试"><a href="#功能测试" class="headerlink" title="功能测试"></a>功能测试</h4><p>正向用例:</p>
+<ol>
+<li>输入已注册的用户名和正确的密码，验证是否登录成功；</li>
+</ol>
+<p>逆向用例：</p>
+<ol start="2">
+<li>输入已注册的用户名和不正确的密码，验证是否登录失败，并且提示信息正确；</li>
+<li>输入未注册的用户名和任意密码，验证是否登录失败，并且提示信息正确；</li>
+<li>用户名和密码两者都为空，验证是否登录失败，并且提示信息正确；</li>
+<li>用户名和密码两者之一为空，验证是否登录失败，并且提示信息正确；</li>
+<li>如果登录功能启用了验证码功能，在用户名和密码正确的前提下，输入正确的验证码，验证是否登录成功；</li>
+<li>如果登录功能启用了验证码功能，在用户名和密码正确的前提下，输入错误的验证码，验证是否登录失败，并且提示信息正确。</li>
+</ol>
+<p>以上是基本的</p>
+<p>有经验的测试测试工程师还会增加:</p>
+<ol>
+<li>用户名和密码是否大小写敏感；</li>
+<li>页面上的密码框是否加密显示；</li>
+<li>后台系统创建的用户第一次登录成功时，是否提示修改密码；</li>
+<li>忘记用户名和忘记密码的功能是否可用；</li>
+<li>前端页面是否根据设计要求限制用户名和密码长度；</li>
+<li>如果登录功能需要验证码，点击验证码图片是否可以更换验证码，更换后的验证码是否可用；</li>
+<li>刷新页面是否会刷新验证码；</li>
+<li>如果验证码具有时效性，需要分别验证时效内和时效外验证码的有效性；</li>
+<li>用户登录成功但是会话超时后，继续操作是否会重定向到用户登录界面；</li>
+<li>不同级别的用户，比如管理员用户和普通用户，登录系统后的权限是否正确；</li>
+<li>页面默认焦点是否定位在用户名的输入框中；</li>
+<li>快捷键Tab 和Enter等，是否可以正常使用。</li>
+</ol>
+<h4 id="性能"><a href="#性能" class="headerlink" title="性能"></a>性能</h4><ol>
+<li>单用户登录的响应时间是否小于3秒；</li>
+<li>单用户登录时，后台请求数量是否过多；</li>
+<li>高并发场景下用户登录的响应时间是否小于5秒；</li>
+<li>高并发场景下服务端的监控指标是否符合预期；</li>
+<li>高集合点并发场景下，是否存在资源死锁和不合理的资源等待；</li>
+<li>长时间大量用户连续登录和登出，服务器端是否存在内存泄漏。</li>
+</ol>
+<h4 id="安全性"><a href="#安全性" class="headerlink" title="安全性"></a>安全性</h4><ol>
+<li>用户密码后台存储是否加密；</li>
+<li>用户密码在网络传输过程中是否加密；</li>
+<li>密码是否具有有效期，密码有效期到期后，是否提示需要修改密码；</li>
+<li>不登录的情况下，在浏览器中直接输入登录后的URL地址，验证是否会重新定向到用户登录界面；</li>
+<li>密码输入框是否不支持复制和粘贴；</li>
+<li>密码输入框内输入的密码是否都可以在页面源码模式下被查看；</li>
+<li>用户名和密码的输入框中分别输入典型的“SQL注入攻击”字符串，验证系统的返回页面；</li>
+<li>用户名和密码的输入框中分别输入典型的“XSS跨站脚本攻击”字符串，验证系统行为是否被篡改；</li>
+<li>连续多次登录失败情况下，系统是否会阻止后续的尝试以应对暴力破解；</li>
+<li>同一用户在同一终端的多种浏览器上登录，验证登录功能的互斥性是否符合设计预期；</li>
+<li>同一用户先后在多台终端的浏览器上登录，验证登录是否具有互斥性。</li>
+</ol>
+<h4 id="兼容性"><a href="#兼容性" class="headerlink" title="兼容性"></a>兼容性</h4><ol>
+<li>不同浏览器下，验证登录页面的显示以及功能正确性；</li>
+<li>相同浏览器的不同版本下，验证登录页面的显示以及功能正确性；</li>
+<li>不同移动设备终端的不同浏览器下，验证登录页面的显示以及功能正确性；</li>
+<li>不同分辨率的界面下，验证登录页面的显示以及功能正确性。</li>
+</ol>
+<h3 id="微信红包测试用例"><a href="#微信红包测试用例" class="headerlink" title="微信红包测试用例 *****"></a>微信红包测试用例 *****</h3><p>从业务流程考虑:</p>
+<p>单个红包：</p>
+<ol>
+<li>红包金额为空、0、0.01、200.00、200.01、199.99、200</li>
+<li>留言输入数字、字母、汉字、特殊字符</li>
+<li>留言长度</li>
+<li>留言复制粘贴</li>
+<li>表情选择收藏表情、其他表情</li>
+<li>删除表情、重新选择表情</li>
+<li>选择支付方式:零钱、银行卡、添加新卡支付。其中钱数&lt;红包钱数、其中钱数&#x3D;红包钱数、其中钱数&gt;红包钱数</li>
+<li>使用指纹确认付款（正确的、错误的指纹）</li>
+<li>使用密码确认付款（正确的、错误的密码）</li>
+<li>红包成功发送后 相应支付方式中钱数减少（减少金额与红包金额一致）</li>
+<li>接受者能看到红包具体信息，红包金额、留言、表情均能正确显示</li>
+<li>红包被拆开后显示已领取，领取者零钱中增加正确金额，再次领取只能查看红包信息</li>
+<li>发红包者自己领红包</li>
+<li>红包24小时未被领取提示红包被退回，相应支付方式中钱数增加（增加金额与红包金额一致），对方不能领红包</li>
+</ol>
+<p>群发红包-普通红包：（只写了与单个红包不同的地方）</p>
+<ol>
+<li>红包个数 为空、0、001、100、99、101</li>
+<li>红包拆开每个金额一样 均为发红包时设置的单个金额对应的钱数</li>
+<li>红包被拆时，有相应提示</li>
+<li>发红包者自己领红包</li>
+<li>红包24小时内未被拆完，剩余钱被退回，相应支付方式中钱数增加</li>
+</ol>
+<p>群发红包-拼手气红包：</p>
+<ol>
+<li>红包总额&#x2F;红包个数&lt;0.01</li>
+<li>红包每个人拆开金额不同，总金额与发红包设置的总额一致</li>
+<li>红包24小时内拆完后显示最佳手气</li>
+<li>红包24小时内未被拆完不显示最佳手气</li>
+</ol>
+<p>兼容性：安卓、苹果 不同型号版本手机</p>
+<p>UI测试：界面无错别字，风格统一</p>
+<p>中断测试：不同应用之间切换、断网、来电、短信、低电量、手机没电</p>
+<p>网络测试：2g&#x2F;3g&#x2F;4g  WiFi 移动联通电信  弱网  无网</p>
+<h3 id="微信朋友圈测试用例"><a href="#微信朋友圈测试用例" class="headerlink" title="微信朋友圈测试用例 *****"></a>微信朋友圈测试用例 *****</h3><p>当给出的功能比较笼统的时候，可以想一想这个大功能有哪些小功能 然后再考虑这些小功能的业务流程或者说使用场景逻辑，从中提取测试点，提取到测试点之后再使用等价类法、边界值法等方法设计具体的设计用例。</p>
+<p>功能测试</p>
+<p>1 朋友圈发送功能</p>
+<p>1）只发送文本</p>
+<p>a、考虑文本长度：1-1500字符（该数据为百度数据）、超出最大字符长度</p>
+<p>b、文本是否支持复制粘贴</p>
+<p>c、为空验证</p>
+<p>2）只发送图片</p>
+<p>a、本地相册选择&#x2F;拍摄</p>
+<p>b、图片数量验证：1-9张图片、超出9张</p>
+<p>c、为空验证</p>
+<p>3）只发送视频</p>
+<p>a、本地相册选择&#x2F;拍摄</p>
+<p>b、视频秒数验证：1-10s，超出10s</p>
+<p>c、视频个数验证：1个，超出1个</p>
+<p>d、视频格式验证：支持的视频格式，例mp4、不支持的视频格式</p>
+<p>e、视频大小验证：苹果400kb以内、Android200-300kb（此为百度数据）、超出规定大小</p>
+<p>f、视频预览增删改操作</p>
+<p>g、为空验证</p>
+<p>4）发送文本+图片：输入满足要求的文本、图片进行一次验证</p>
+<p>5）发送文本+视频：输入满足要求的文本、视频进行一次验证</p>
+<p>6）发送图片+视频：不支持发送</p>
+<p>7）朋友圈发送内容是否有限制，例如涉及黄赌毒等敏感字</p>
+<p>8）所在位置</p>
+<p>a、不显示位置：发送到朋友圈动态不显示位置</p>
+<p>b、选择对应位置：搜索支持、自动定位、手动编辑</p>
+<p>C、点击取消，返回上一级页面</p>
+<p>9）谁可以看</p>
+<p>a、设置公开：所有朋友可见</p>
+<p>b、设置私密（仅自己可见）：自己查看朋友圈-可见、好友查看朋友圈-不可见</p>
+<p>c、设置部分可见（部分朋友可见）：选择的部分好友-可见、不被选择的好友-不可见、是否有人数上限</p>
+<p>d、设置不给谁看（选中的朋友不可见）：不被选中的朋友-可见、被选中的朋友-不可见、是否有人数上限</p>
+<p>e、点击取消，返回发送页面</p>
+<p>10）提醒谁看</p>
+<p>a、提醒单人&#x2F;提醒多人：被提醒的朋友-收到消息提醒、未被提醒-未有消息提醒</p>
+<p>b、是否有人数上限</p>
+<p>c、点击取消，返回发送页面</p>
+<p>11）同步QQ空间：默认不同步、同步到QQ空间</p>
+<p>12）取消发送朋友圈操作</p>
+<p>a、选择相机，点击取消，返回朋友圈页面</p>
+<p>b、进入朋友圈发送页面，选择文本图片，点击取消</p>
+<p>13）朋友圈当天发送次数是否有上限限制</p>
+<p>2、朋友圈浏览功能</p>
+<p>1）文本查看：</p>
+<p>a、过长文本内容是否隐藏，并支持查看全文</p>
+<p>b、右键选择复制、收藏、翻译</p>
+<p>c、url链接是否支持点击跳转网页</p>
+<p>2）图片查看</p>
+<p>a、小图右键支持收藏&#x2F;编辑</p>
+<p>b、点击支持大图浏览</p>
+<p>c、选择发送给朋友、收藏、保存图片、编辑</p>
+<p>d、多张图片支持左右滑动浏览</p>
+<p>3）视频查看</p>
+<p>a、右键视频支持静音播放&#x2F;搜藏</p>
+<p>b、点击视频播放按键支持播放视频</p>
+<p>c、选择发送给朋友、收藏、保存视频、编辑</p>
+<p>4）分享动态浏览：QQ空间&#x2F;公众号文章&#x2F;非腾讯产品分享后朋友圈是否正常显示</p>
+<p>5）赞：点赞、取消点赞</p>
+<p>6）评论</p>
+<p>a、评论长度：评论字数合理长度、评论超过字数上限</p>
+<p>b、评论类型：纯中文、纯数字、纯字母、纯字符、纯表情（微信表情&#x2F;手机自带表情）、混合类型、包含url链接；</p>
+<p>c、评论是否支持复制粘贴</p>
+<p>d、为空验证</p>
+<p>e、发表评论后删除</p>
+<p>f、评论回复操作</p>
+<p>7）删除朋友圈动态</p>
+<p>8）更换相册封面</p>
+<p>9）刷新是否正常获取新动态</p>
+<p>10）上滑是否加载更多</p>
+<p>界面&#x2F;易用性测试</p>
+<p>1、技术人员角度：页面布局设计是否跟产品原型图&#x2F;ui效果图一致</p>
+<p>2、但除了考虑1之外，我们同样要考虑到用户使用：功能操作是否简便，页面布局排版风格是否美观合理，提示语相关信息是否易于理解</p>
+<p>中断测试</p>
+<p>1、主要考虑：a)核心功能  b)当前功能存在实时数据交换，例发朋友圈、浏览朋友圈进行中断，是否容易出现崩溃</p>
+<p>2、中断包括：前后台切换、锁屏解锁、断网重连、app切换、来电话&#x2F;来短信中断、插拔耳机线&#x2F;数据线</p>
+<p>网络测试</p>
+<p>1、三大运营商不同网络制式测试</p>
+<p>2、网络切换测试：WIFI&#x2F;4G&#x2F;3G&#x2F;2G</p>
+<p>3、无网测试：对于缓存在本地的数据，部分朋友圈信息是否支持浏览</p>
+<p>4、弱网测试：</p>
+<p>a、延时：页面响应时间是否可接受、不同网络制式是否区分超时时长、出现请求超时，是否给予相应的提示</p>
+<p>b、丢包：有无超时重连机制、如果未响应，是否给予相应提示</p>
+<p>c、页面呈现的完整性验证</p>
+<p>兼容性测试</p>
+<p>1、Android手机端、苹果手机端、pad版（主流）功能界面显示是否正常</p>
+<p>2、各平台朋友圈展示数据是否一致</p>
+<p>安全测试</p>
+<p>发送朋友圈时，文本输入脚本代码，是否出现异常</p>
+<p>性能测试</p>
+<p>1、服务器性能测试</p>
+<p>可通过loadrunner&#x2F;jmeter工具实现，主要关注TPS、响应时间、吞吐量、CPU、内存等</p>
+<p>2、app客户端性能测试</p>
+<p>可通过GT工具实现，运行时关注cpu、内存、流量、电量等占用率</p>
+<p>3、app压力稳定性测试</p>
+<p>通过monkey工具实现，频繁发送朋友圈，浏览朋友圈请求，是否容易发生崩溃</p>
+<h2 id="测开岗高频算法题"><a href="#测开岗高频算法题" class="headerlink" title="测开岗高频算法题"></a>测开岗高频算法题</h2><p><strong>测开岗的算法题难度相对要低一些，差不多都是剑指offer上或者力扣上的热门且难度为简单、中等的题。把每个标签的前5~10道题刷一刷，面试的时候基本够用。</strong></p>
+<p>三个数字的最大乘积</p>
+<p>有两个很长很很长的字符串，但是字符都是数字，实现这俩字符串的加法，输出为一个字符串。如str1&#x3D;”1231213347845713824718237489123748343246217489132”, str2&#x3D;”623478573127438912743892017489132748172341324132”</p>
+<p>两数之和 标签：哈希表 （★★★）</p>
+<p>str1能不能最多交换两次字符变成str2，并设计测试用例。</p>
+<p>和为s的连续正数序列 标签：暴力、双指针</p>
+<p>有效括号 标签：栈 （★★★★）</p>
+<p>数组中重复的数字 标签：哈希表 （★★★★★）</p>
+<p>7的倍数或者包含7打印”-“，其余的打印数字，每行不超过5个数字</p>
+<p>从1到100000000中取出一个数(自己申明一个变量，比如num &#x3D; 2333)，写代码找出取出的是哪个数。    标签：二分查找</p>
+<p>一个数在有序数组里出现的次数。标签：二分</p>
+<p>字符串转整数，并写测试用例。    标签：数学，有很多非数字类型需要考虑，还有数字越界的情况需要考虑，比较考察测试思维 （★★★★★）</p>
+<p>连续子数组的最大和 标签：分治、DP （★★★★）</p>
+<p>在字符串中找出没有重复字符的最长的连续子串，并返回子串及长度，譬如“aaabcdcbcbbb” 最长子串为abcd，长度为4</p>
+<p>判断链表是否有环 标签：双指针</p>
+<p>两个栈实现一个队列 （★★）</p>
+<p>最长不含重复字符的子字符串 标签：双指针、滑动窗口 （★★★★★）</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://www.meprotoss.com">Mr.Chen</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://www.meprotoss.com/undefined/aec9bf64.html">http://www.meprotoss.com/undefined/aec9bf64.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://www.meprotoss.com" target="_blank">CHEN先生的小站</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/undefined/20a82735.html" title="暑期实习复盘"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">暑期实习复盘</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Mr.Chen</div><div class="author-info__description">毕竟几人终得鹿 不知终日梦为鱼</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">23</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E8%87%AA%E5%8A%A8%E8%AF%9D%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7"><span class="toc-number">1.</span> <span class="toc-text">常用自动话测试工具</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Selenium"><span class="toc-number">1.1.</span> <span class="toc-text">Selenium **</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Postman"><span class="toc-number">1.2.</span> <span class="toc-text">Postman ***</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Jmeter"><span class="toc-number">1.3.</span> <span class="toc-text">Jmeter ***</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Jenkins"><span class="toc-number">1.4.</span> <span class="toc-text">Jenkins</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%8B%E6%9C%BA%E5%85%BC%E5%AE%B9%E6%80%A7%E6%B5%8B%E8%AF%95"><span class="toc-number">2.</span> <span class="toc-text">手机兼容性测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B"><span class="toc-number">3.</span> <span class="toc-text">软件开发流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%96%B9%E6%B3%95"><span class="toc-number">4.</span> <span class="toc-text">软件测试方法 *****</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CI-CD%E7%90%86%E8%A7%A3"><span class="toc-number">5.</span> <span class="toc-text">CI&#x2F;CD理解 *****</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95"><span class="toc-number">6.</span> <span class="toc-text">单元测试 ***</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%B6%E9%97%B4%E7%B4%A7%E4%BB%BB%E5%8A%A1%E9%87%8D%E4%B8%8D%E8%83%BD%E5%8A%A0%E4%BA%BA%E7%9A%84%E6%83%85%E5%86%B5%E6%80%8E%E4%B9%88%E5%B0%BD%E6%9C%80%E5%A4%A7%E5%8A%AA%E5%8A%9B%E6%B5%8B%E8%AF%95"><span class="toc-number">7.</span> <span class="toc-text">时间紧任务重不能加人的情况怎么尽最大努力测试?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%BB%E4%BD%95%E6%B5%8B%E8%AF%95%E9%83%BD%E5%BA%94%E8%AF%A5%E5%85%88%E8%B5%B0%E4%B8%9A%E5%8A%A1"><span class="toc-number">8.</span> <span class="toc-text">任何测试都应该先走业务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%92%88%E5%AF%B9%E6%9F%90%E4%B8%80%E4%B8%AA%E4%BA%A7%E5%93%81%E5%86%99%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B"><span class="toc-number">9.</span> <span class="toc-text">针对某一个产品写测试用例 *****</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E6%B0%B4%E6%9D%AF"><span class="toc-number">9.1.</span> <span class="toc-text">测试水杯 *</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E4%B8%80%E4%B8%AA%E8%BE%93%E5%85%A5%E6%A1%86-%E8%AE%A1%E6%95%B0"><span class="toc-number">9.2.</span> <span class="toc-text">测试一个输入框(计数) **</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%92%88%E5%AF%B9%E2%80%9C%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E2%80%9D%E8%AE%BE%E8%AE%A1%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B"><span class="toc-number">9.3.</span> <span class="toc-text">针对“用户登录”设计测试用例 ***</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95"><span class="toc-number">9.3.1.</span> <span class="toc-text">功能测试</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%A7%E8%83%BD"><span class="toc-number">9.3.2.</span> <span class="toc-text">性能</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E5%85%A8%E6%80%A7"><span class="toc-number">9.3.3.</span> <span class="toc-text">安全性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%BC%E5%AE%B9%E6%80%A7"><span class="toc-number">9.3.4.</span> <span class="toc-text">兼容性</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BE%AE%E4%BF%A1%E7%BA%A2%E5%8C%85%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B"><span class="toc-number">9.4.</span> <span class="toc-text">微信红包测试用例 *****</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BE%AE%E4%BF%A1%E6%9C%8B%E5%8F%8B%E5%9C%88%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B"><span class="toc-number">9.5.</span> <span class="toc-text">微信朋友圈测试用例 *****</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8B%E5%BC%80%E5%B2%97%E9%AB%98%E9%A2%91%E7%AE%97%E6%B3%95%E9%A2%98"><span class="toc-number">10.</span> <span class="toc-text">测开岗高频算法题</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined/aec9bf64.html" title="八股文骚套路之测开">八股文骚套路之测开</a><time datetime="2024-06-23T12:07:23.000Z" title="发表于 2024-06-23 20:07:23">2024-06-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined/20a82735.html" title="暑期实习复盘">暑期实习复盘</a><time datetime="2024-06-23T06:56:33.000Z" title="发表于 2024-06-23 14:56:33">2024-06-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined/0.html" title="无题">无题</a><time datetime="2024-06-20T05:58:12.151Z" title="发表于 2024-06-20 13:58:12">2024-06-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined/e48fb72f.html" title="小说精品屋学习笔记">小说精品屋学习笔记</a><time datetime="2024-06-17T07:10:12.000Z" title="发表于 2024-06-17 15:10:12">2024-06-17</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined/50bac2e6.html" title="Diary">Diary</a><time datetime="2024-06-15T08:03:23.000Z" title="发表于 2024-06-15 16:03:23">2024-06-15</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Mr.Chen</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.8/dist/lazyload.iife.min.js"></script><div class="js-pjax"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/metingjs/dist/Meting.min.js"></script><div class="app-refresh" id="app-refresh" style="position: fixed;top: -2.2rem;left: 0;right: 0;z-index: 99999;padding: 0 1rem;font-size: 15px;height: 2.2rem;transition: all 0.3s ease;"><div class="app-refresh-wrap" style=" display: flex;color: #fff;height: 100%;align-items: center;justify-content: center;"><label>✨ 有新文章啦！ 👉</label><a href="javascript:void(0)" onclick="location.reload()"><span style="color: #fff;text-decoration: underline;cursor: pointer;">🍗点击食用🍔</span></a></div></div><script>if ('serviceWorker' in navigator) {
+if (navigator.serviceWorker.controller) {
+navigator.serviceWorker.addEventListener('controllerchange', function() {
+showNotification()
+})
+}
+window.addEventListener('load', function() {
+navigator.serviceWorker.register('/sw.js')
+})
+}
+function showNotification() {
+if (GLOBAL_CONFIG.Snackbar) {
+var snackbarBg =
+document.documentElement.getAttribute('data-theme') === 'light' ?
+GLOBAL_CONFIG.Snackbar.bgLight :
+GLOBAL_CONFIG.Snackbar.bgDark
+var snackbarPos = GLOBAL_CONFIG.Snackbar.position
+Snackbar.show({
+text: '✨ 有新文章啦！ 👉',
+backgroundColor: snackbarBg,
+duration: 500000,
+pos: snackbarPos,
+actionText: '🍗点击食用🍔',
+actionTextColor: '#fff',
+onActionClick: function(e) {
+location.reload()
+},
+})
+} else {
+var showBg =
+document.documentElement.getAttribute('data-theme') === 'light' ?
+'#3b70fc' :
+'#1f1f1f'
+var cssText = `top: 0; background: ${showBg};`
+document.getElementById('app-refresh').style.cssText = cssText
+}
+}</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body></html>
