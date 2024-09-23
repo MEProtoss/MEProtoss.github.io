@@ -105,11 +105,11 @@
   </entry>
   
   <entry>
-    <title>计算机基础——Linux</title>
+    <title>八股文骚套路之Linux</title>
     <link href="http://www.meprotoss.com/undefined/f7999b22.html"/>
     <id>http://www.meprotoss.com/undefined/f7999b22.html</id>
     <published>2024-09-20T07:33:09.000Z</published>
-    <updated>2024-09-21T03:08:55.484Z</updated>
+    <updated>2024-09-23T02:14:38.424Z</updated>
     
     <content type="html"><![CDATA[<h2 id="inode"><a href="#inode" class="headerlink" title="inode"></a>inode</h2><p>index + node</p><p>inode就是用来维护某个文件被分成几块、每一块在的地址、文件拥有者，创建时间，权限，大小等信息。</p><h2 id="Linux常用指令"><a href="#Linux常用指令" class="headerlink" title="Linux常用指令"></a>Linux常用指令</h2><table><thead><tr><th>指令</th><th>作用</th></tr></thead><tbody><tr><td>stat</td><td>查看文件的 inode 信息</td></tr><tr><td>ln</td><td>创建硬链接</td></tr><tr><td>file</td><td>查看文件类型信息</td></tr><tr><td>tar</td><td>压缩和解压缩</td></tr><tr><td>ls -l</td><td>查看某个目录下的文件或目录的权限</td></tr><tr><td>top</td><td>查看系统的 CPU 使用率、内存使用率、进程信息等</td></tr><tr><td>systemctl</td><td>查看系统服务的状态、启动、停止、重启等</td></tr></tbody></table><h2 id="Linux获取实时刷新的日志"><a href="#Linux获取实时刷新的日志" class="headerlink" title="Linux获取实时刷新的日志"></a>Linux获取实时刷新的日志</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 实时刷新</span></span><br><span class="line"><span class="built_in">tail</span> -f logfile.log</span><br><span class="line"><span class="comment"># 每5分钟执行一次查询</span></span><br><span class="line">watch -n 300 <span class="string">&#x27;tail logfile.log&#x27;</span></span><br><span class="line"></span><br><span class="line">journalctl -f</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -158,26 +158,6 @@
       
       
     <summary type="html">&lt;h2 id=&quot;网易互娱游戏测试&quot;&gt;&lt;a href=&quot;#网易互娱游戏测试&quot; class=&quot;headerlink&quot; title=&quot;网易互娱游戏测试&quot;&gt;&lt;/a&gt;网易互娱游戏测试&lt;/h2&gt;&lt;h3 id=&quot;一面-1小时&quot;&gt;&lt;a href=&quot;#一面-1小时&quot; class=&quot;headerli</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Diary</title>
-    <link href="http://www.meprotoss.com/undefined/50bac2e6.html"/>
-    <id>http://www.meprotoss.com/undefined/50bac2e6.html</id>
-    <published>2024-06-15T08:03:23.000Z</published>
-    <updated>2024-06-23T12:02:32.489Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="2024-06-15-16-03-59"><a href="#2024-06-15-16-03-59" class="headerlink" title="2024&#x2F;06&#x2F;15 16:03:59"></a>2024&#x2F;06&#x2F;15 16:03:59</h2><p>测试理论需要看的书：《软件测试的艺术》</p><p>数据库要多动手敲语句</p><p>算法：剑指offer还是得看看;首推codetop 可以按高频，10道题一组，一组练个两三轮。<br>以”容易“难度为主</p><p>编程语言：可以把python熟悉一下</p><p>不熟练的最好不要写在简历上</p><p><a href="https://link.zhihu.com/?target=https://www.nowcoder.com/discuss/607662?channel=-1&source_id=profile_follow_post_nctrack">测试开发岗-高频知识整理【校招】</a></p><p><a href="https://link.zhihu.com/?target=https://www.nowcoder.com/discuss/628372?channel=-1&source_id=profile_follow_post_nctrack">春招测开岗面试高频考点万字汇总</a></p><p>这里按重要性将知识点的类别排个序，除必选外，选择一个多花2天精通。</p><p>1）测试理论 【必选】 0.5天<br>2）编程语言 【必选】 java、python、C++ 1.5天</p><ul><li><input disabled="" type="checkbox"> 自动化测试项目练手</li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;2024-06-15-16-03-59&quot;&gt;&lt;a href=&quot;#2024-06-15-16-03-59&quot; class=&quot;headerlink&quot; title=&quot;2024&amp;#x2F;06&amp;#x2F;15 16:03:59&quot;&gt;&lt;/a&gt;2024&amp;#x2F;06&amp;#x2F;1</summary>
       
     
     
@@ -311,19 +291,6 @@
   </entry>
   
   <entry>
-    <title>Charles抓包测试工具</title>
-    <link href="http://www.meprotoss.com/undefined/326450ee.html"/>
-    <id>http://www.meprotoss.com/undefined/326450ee.html</id>
-    <published>2024-05-28T09:26:09.000Z</published>
-    <updated>2024-06-09T07:49:49.473Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>测试基础</title>
     <link href="http://www.meprotoss.com/undefined/322e93bb.html"/>
     <id>http://www.meprotoss.com/undefined/322e93bb.html</id>
@@ -344,27 +311,6 @@
   </entry>
   
   <entry>
-    <title>Hr面</title>
-    <link href="http://www.meprotoss.com/undefined/3593513e.html"/>
-    <id>http://www.meprotoss.com/undefined/3593513e.html</id>
-    <published>2024-05-10T13:52:23.000Z</published>
-    <updated>2024-09-23T02:10:48.811Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="你做游戏测试的职业规划？"><a href="#你做游戏测试的职业规划？" class="headerlink" title="你做游戏测试的职业规划？"></a>你做游戏测试的职业规划？</h2><ol><li>首先作为一个游戏的重度爱好者，从事游戏行业一直是我的理想，能将自己的兴趣和工作结合起来，真的是一件很棒的事情</li><li>要扎实专业技能，因为先前很少有实际应用于游戏场景的测试经验，所以在刚迈入工作岗位的时候，有必要在业务中强化自己的专业能力，做好本职工作，积累经验。</li><li>其次作为一名测试人员，我认为丰富的知识面也是相当重要的，测试是产品上线之前的最后一道工序，在测试中检测出问题的时候，需要经常需要和开发、策划人员进行沟通和反馈，所以自己本身对于业务的技术框架也必须是熟悉的，也许不需要对细节有多么深入的理解，但是一定要有一个宏观上的把控,所以我会努力去拓展自己的知识面，不仅仅是将眼光局限于测试技能，而是也要加强自己的代码能力，强化数据库、微服务等知识。</li><li>除了技能上的锻炼，作为游戏行业的测试，不同于其他测试岗位，对于游戏行业的风向和市场的偏好也必须有深刻的理解，一个不懂游戏的人去担任游戏行业的从业者显然是一件很糟糕的事情。</li><li>还有的话，我认为不断提高自己的软实力也是非常有必要的，在有了一定的积累之后，将不再单单局限于测试本身，而是会进行更加宏观的设计，比如测试策略的指制定、测试进度的把控，同时要提升自己的人际交往能力，尤其是沟通和表达能力，有的时候这个也许比技术本身还要重要。</li></ol><h2 id="你做测试的优势在哪里"><a href="#你做测试的优势在哪里" class="headerlink" title="你做测试的优势在哪里"></a>你做测试的优势在哪里</h2><ul><li>首先我对游戏充满了热爱，同时对平时在游玩中遇到的bug和错误深恶痛绝，如果能成为一名游戏测试人员，那么就有机会在遇到检测出这些问题，这让我感到很兴奋</li><li>其次我对多种编程语言都有一定的涉猎，主学的是java，也自学过python，同时在维护和配置自己的archlinux系统和neovim编辑器的时候，经常会接触到shell和lua语言，对他们都有一定的了解</li><li>我有强烈的探索欲望和持之以恒的品质，不怕麻烦，不畏难，并乐于总结经验，进行分享。提及自己在配置和使用neovim和archlinux中遇到的问题和收获</li><li>我有较强的语言表达能力和人际交往能力，兴趣广泛，容易与人相处，作为一名测试人员，往往需要及时整理测试文档，与开发人员和策划人员进行沟通和接洽，所以必须要有这方面的能力，我喜欢与人交往，乐于表现，读书期间曾多次参加志愿者展演，也曾经在毕业晚会的舞台上登台演出。</li></ul><h2 id="你找工作的时候，最重要的考虑因素是什么？为什么"><a href="#你找工作的时候，最重要的考虑因素是什么？为什么" class="headerlink" title="你找工作的时候，最重要的考虑因素是什么？为什么"></a>你找工作的时候，最重要的考虑因素是什么？为什么</h2><ul><li>最重要的因素是岗位与自身的契合度，我认为岗位与人的匹配是非常重要的。</li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;你做游戏测试的职业规划？&quot;&gt;&lt;a href=&quot;#你做游戏测试的职业规划？&quot; class=&quot;headerlink&quot; title=&quot;你做游戏测试的职业规划？&quot;&gt;&lt;/a&gt;你做游戏测试的职业规划？&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;首先作为一个游戏的重度爱好者，从事游戏行业一直是</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>MySql</title>
     <link href="http://www.meprotoss.com/undefined/6cac71de.html"/>
     <id>http://www.meprotoss.com/undefined/6cac71de.html</id>
@@ -377,6 +323,27 @@
       
       
     <summary type="html">&lt;h2 id=&quot;单表查询&quot;&gt;&lt;a href=&quot;#单表查询&quot; class=&quot;headerlink&quot; title=&quot;单表查询&quot;&gt;&lt;/a&gt;单表查询&lt;/h2&gt;&lt;h3 id=&quot;1757可回收且低脂的产品&quot;&gt;&lt;a href=&quot;#1757可回收且低脂的产品&quot; class=&quot;headerlink</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>八股文骚套路之Hr面</title>
+    <link href="http://www.meprotoss.com/undefined/3593513e.html"/>
+    <id>http://www.meprotoss.com/undefined/3593513e.html</id>
+    <published>2024-05-10T13:52:23.000Z</published>
+    <updated>2024-09-23T02:12:43.288Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="你做游戏测试的职业规划？"><a href="#你做游戏测试的职业规划？" class="headerlink" title="你做游戏测试的职业规划？"></a>你做游戏测试的职业规划？</h2><ol><li>首先作为一个游戏的重度爱好者，从事游戏行业一直是我的理想，能将自己的兴趣和工作结合起来，真的是一件很棒的事情</li><li>要扎实专业技能，因为先前很少有实际应用于游戏场景的测试经验，所以在刚迈入工作岗位的时候，有必要在业务中强化自己的专业能力，做好本职工作，积累经验。</li><li>其次作为一名测试人员，我认为丰富的知识面也是相当重要的，测试是产品上线之前的最后一道工序，在测试中检测出问题的时候，需要经常需要和开发、策划人员进行沟通和反馈，所以自己本身对于业务的技术框架也必须是熟悉的，也许不需要对细节有多么深入的理解，但是一定要有一个宏观上的把控,所以我会努力去拓展自己的知识面，不仅仅是将眼光局限于测试技能，而是也要加强自己的代码能力，强化数据库、微服务等知识。</li><li>除了技能上的锻炼，作为游戏行业的测试，不同于其他测试岗位，对于游戏行业的风向和市场的偏好也必须有深刻的理解，一个不懂游戏的人去担任游戏行业的从业者显然是一件很糟糕的事情。</li><li>还有的话，我认为不断提高自己的软实力也是非常有必要的，在有了一定的积累之后，将不再单单局限于测试本身，而是会进行更加宏观的设计，比如测试策略的指制定、测试进度的把控，同时要提升自己的人际交往能力，尤其是沟通和表达能力，有的时候这个也许比技术本身还要重要。</li></ol><h2 id="你做测试的优势在哪里"><a href="#你做测试的优势在哪里" class="headerlink" title="你做测试的优势在哪里"></a>你做测试的优势在哪里</h2><ul><li>首先我对游戏充满了热爱，同时对平时在游玩中遇到的bug和错误深恶痛绝，如果能成为一名游戏测试人员，那么就有机会在遇到检测出这些问题，这让我感到很兴奋</li><li>其次我对多种编程语言都有一定的涉猎，主学的是java，也自学过python，同时在维护和配置自己的archlinux系统和neovim编辑器的时候，经常会接触到shell和lua语言，对他们都有一定的了解</li><li>我有强烈的探索欲望和持之以恒的品质，不怕麻烦，不畏难，并乐于总结经验，进行分享。提及自己在配置和使用neovim和archlinux中遇到的问题和收获</li><li>我有较强的语言表达能力和人际交往能力，兴趣广泛，容易与人相处，作为一名测试人员，往往需要及时整理测试文档，与开发人员和策划人员进行沟通和接洽，所以必须要有这方面的能力，我喜欢与人交往，乐于表现，读书期间曾多次参加志愿者展演，也曾经在毕业晚会的舞台上登台演出。</li></ul><h2 id="你找工作的时候，最重要的考虑因素是什么？为什么"><a href="#你找工作的时候，最重要的考虑因素是什么？为什么" class="headerlink" title="你找工作的时候，最重要的考虑因素是什么？为什么"></a>你找工作的时候，最重要的考虑因素是什么？为什么</h2><ul><li>最重要的因素是岗位与自身的契合度，我认为岗位与人的匹配是非常重要的。</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;你做游戏测试的职业规划？&quot;&gt;&lt;a href=&quot;#你做游戏测试的职业规划？&quot; class=&quot;headerlink&quot; title=&quot;你做游戏测试的职业规划？&quot;&gt;&lt;/a&gt;你做游戏测试的职业规划？&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;首先作为一个游戏的重度爱好者，从事游戏行业一直是</summary>
       
     
     
@@ -421,6 +388,47 @@
       
     <summary type="html">&lt;h2 id=&quot;docker-是什么？&quot;&gt;&lt;a href=&quot;#docker-是什么？&quot; class=&quot;headerlink&quot; title=&quot;docker 是什么？&quot;&gt;&lt;/a&gt;docker 是什么？&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;docker 独立的容器（container），可以跨系</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Java新特性</title>
+    <link href="http://www.meprotoss.com/undefined/9ac696fa.html"/>
+    <id>http://www.meprotoss.com/undefined/9ac696fa.html</id>
+    <published>2024-05-08T14:54:02.000Z</published>
+    <updated>2024-05-08T16:09:44.776Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="函数式接口-functional-interface"><a href="#函数式接口-functional-interface" class="headerlink" title="函数式接口(functional interface)"></a>函数式接口(functional interface)</h2><p>定义：也称 SAM 接口，即 Single Abstract Method interfaces，有且只有一个抽象方法，但可以有多个非抽象方法的接口。</p><p>在 java 8 中专门有一个包放函数式接口java.util.function，该包下的所有接口都有 @FunctionalInterface 注解，提供函数式编程。在其他包中也有函数式接口，其中一些没有@FunctionalInterface 注解，但是只要符合函数式接口的定义就是函数式接口，与是否有@FunctionalInterface注解无关，注解只是在编译时起到强制规范定义的作用。其在 Lambda 表达式中有广泛的应用。</p><p>基本上，函数式编程是一种编程风格，它将计算看作为是数学函数的求值。</p><p>在数学中，函数是将输入集与输出集相关联的表达式。函数的输出仅取决于其输入。我们也可以将两个或多个函数组合在一起得到一个新函数</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;函数式接口-functional-interface&quot;&gt;&lt;a href=&quot;#函数式接口-functional-interface&quot; class=&quot;headerlink&quot; title=&quot;函数式接口(functional interface)&quot;&gt;&lt;/a&gt;函数式接口(f</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Linux系统疑难杂症</title>
+    <link href="http://www.meprotoss.com/undefined/c66bafdb.html"/>
+    <id>http://www.meprotoss.com/undefined/c66bafdb.html</id>
+    <published>2024-05-07T01:36:08.000Z</published>
+    <updated>2024-07-01T05:55:31.047Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="ideaVim中英文输入法切换问题"><a href="#ideaVim中英文输入法切换问题" class="headerlink" title="ideaVim中英文输入法切换问题"></a>ideaVim中英文输入法切换问题</h2><ol><li>安装ideaVimExtension 插件</li><li>.ideavimrc中开启</li></ol><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">set keep-english-in-normal</span><br><span class="line">set keep-english-in-normal-and-restore-in-insert</span><br></pre></td></tr></table></figure><h2 id="idea中输入法不跟随鼠标的问题"><a href="#idea中输入法不跟随鼠标的问题" class="headerlink" title="idea中输入法不跟随鼠标的问题"></a>idea中输入法不跟随鼠标的问题</h2><h3 id="问题原因"><a href="#问题原因" class="headerlink" title="问题原因"></a>问题原因</h3><p>具体问题官方其实七年前就有了（参考 <a href="https://youtrack.jetbrains.com/issue/JBR-2460%EF%BC%89%EF%BC%8C%E4%BD%86%E6%98%AF%E6%AF%94%E8%BE%83%E5%9D%91%E7%9A%84%E6%98%AF%E5%AE%98%E6%96%B9%E4%B9%9F%E4%B8%80%E7%9B%B4%E6%B2%A1%E6%9C%89%E8%A7%A3%E5%86%B3%E8%BF%99%E4%B8%AA%E9%97%AE%E9%A2%98%F0%9F%90%B6%EF%BC%88%E6%AD%A4%E5%A4%84%E5%BF%8D%E4%B8%8D%E4%BD%8F%E5%90%90%E6%A7%BD%E4%B8%80%E4%B8%8B%E5%93%88%EF%BC%89%E3%80%82%E7%AE%80%E5%8D%95%E6%9D%A5%E8%AF%B4%E5%B0%B1%E6%98%AF">https://youtrack.jetbrains.com/issue/JBR-2460），但是比较坑的是官方也一直没有解决这个问题🐶（此处忍不住吐槽一下哈）。简单来说就是</a> Idea 的 jre 运行环境一个 bug，导致输入法无法定位到鼠标位置。因此，我们要解决该问题必须要修改 JetBrainsRuntime 的运行代码。</p><h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><ul><li>下载已经修改好的 JRE 环境<br><a href="https://www.jianguoyun.com/p/De33XAgQ89jhCRjDh8EFIAA%EF%BC%9A">下载地址</a></li><li>替换idea目录的JRE</li></ul><h2 id="无法识别移动硬盘和U盘"><a href="#无法识别移动硬盘和U盘" class="headerlink" title="无法识别移动硬盘和U盘"></a>无法识别移动硬盘和U盘</h2><h3 id="问题原因-1"><a href="#问题原因-1" class="headerlink" title="问题原因"></a>问题原因</h3><p>文件系统不兼容</p><h3 id="解决方法-1"><a href="#解决方法-1" class="headerlink" title="解决方法"></a>解决方法</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S ntfs-3g</span><br><span class="line"></span><br></pre></td></tr></table></figure><h2 id="steam加速"><a href="#steam加速" class="headerlink" title="steam加速"></a>steam加速</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yay -S watt-toolkit-bin</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;ideaVim中英文输入法切换问题&quot;&gt;&lt;a href=&quot;#ideaVim中英文输入法切换问题&quot; class=&quot;headerlink&quot; title=&quot;ideaVim中英文输入法切换问题&quot;&gt;&lt;/a&gt;ideaVim中英文输入法切换问题&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;安装id</summary>
       
     
     
