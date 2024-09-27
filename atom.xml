@@ -6,7 +6,7 @@
   <link href="http://www.meprotoss.com/atom.xml" rel="self"/>
   
   <link href="http://www.meprotoss.com/"/>
-  <updated>2024-09-26T09:10:05.667Z</updated>
+  <updated>2024-09-27T02:10:01.781Z</updated>
   <id>http://www.meprotoss.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://www.meprotoss.com/undefined/495bdedc.html"/>
     <id>http://www.meprotoss.com/undefined/495bdedc.html</id>
     <published>2024-09-26T06:12:57.000Z</published>
-    <updated>2024-09-26T09:10:05.667Z</updated>
+    <updated>2024-09-27T02:10:01.781Z</updated>
     
     <content type="html"><![CDATA[<h2 id="遍历"><a href="#遍历" class="headerlink" title="遍历"></a>遍历</h2><ul><li><p>enumerate() 函数用于同时获取字符的索引 j 和字符值 c。</p></li><li><p>set(nums) 可以将数组直接转化为集合，做到去重获取其中所有元素</p></li><li><p>交换数组中的两个元素，不需要像java那样使用temp，直接写在一行中交换即可</p></li></ul><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">nums[cur], nums[index] = nums[index], nums[cur]</span><br><span class="line"></span><br></pre></td></tr></table></figure><ul><li>map() 是一个内置函数，用于将函数应用于可迭代对象（如列表、元组等）的每个元素，<strong>并返回一个迭代器</strong>。它的基本语法如下：</li></ul><p>map(function, iterable)</p><p>例如：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 注意 因为返回的是一个迭代器，因此注意使用的时候要进行类型转换</span><br><span class="line">nums_ = list(map(int, nums)) </span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
     
