@@ -6,7 +6,7 @@
   <link href="http://www.meprotoss.com/atom.xml" rel="self"/>
   
   <link href="http://www.meprotoss.com/"/>
-  <updated>2024-11-01T16:30:38.161Z</updated>
+  <updated>2024-11-01T16:30:44.114Z</updated>
   <id>http://www.meprotoss.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://www.meprotoss.com/undefined/518e617c.html"/>
     <id>http://www.meprotoss.com/undefined/518e617c.html</id>
     <published>2024-11-01T16:30:38.000Z</published>
-    <updated>2024-11-01T16:30:38.161Z</updated>
+    <updated>2024-11-01T16:30:44.114Z</updated>
     
     
     
@@ -34,7 +34,7 @@
     <link href="http://www.meprotoss.com/undefined/6bdd1875.html"/>
     <id>http://www.meprotoss.com/undefined/6bdd1875.html</id>
     <published>2024-10-28T03:00:46.000Z</published>
-    <updated>2024-10-31T11:42:40.657Z</updated>
+    <updated>2024-11-01T16:30:44.114Z</updated>
     
     <content type="html"><![CDATA[<h2 id="介绍一下你的实习"><a href="#介绍一下你的实习" class="headerlink" title="介绍一下你的实习"></a>介绍一下你的实习</h2><p>我在实习期间做的工作主要是使用python整合现有的美术资源脚本，搭建可拓展的框架，实现美术资源的批量crud</p><p>美术资源的信息保存在一个个svn仓库中，每个svn仓库中有一个repository.resouce的索引文件，是xml格式的，里面的每一行为一个object，对应着仓库中的一个美术资源<br>在这一行里面记录了仓库的基本信息，例如<type>&lt;虚拟地址&gt;&lt;实际地址的映射&gt;&lt;资源依赖&gt;等一些信息，美术人员只能看到&#x2F;只关注这个文件<br>每一个美术资源对应着仓库某个文件夹下面的具体的配置文件，这个文件是xml格式的，可以通过基本信息通过一定的处理映射到，里面存储了这个美术资源的具体信息，比如<numfaces><numvertics>这样的信息，本质上就是根据条件来对这个文件里的标签内文本进行crud</p><p>原先的脚本是零散的，有很多复用的逻辑，重复代码很多，给我安排的任务就是搭建一个基本框架出来，将现有的脚本整合进来，并且在新需求来的时候能够基于这个框架快速开发，实现需求</p><h2 id="实习期间遇到的最大的困难是什么，你是怎么解决的"><a href="#实习期间遇到的最大的困难是什么，你是怎么解决的" class="headerlink" title="实习期间遇到的最大的困难是什么，你是怎么解决的"></a>实习期间遇到的最大的困难是什么，你是怎么解决的</h2><p>问题主要是美术资源整合脚本的框架设计上，面对单个明确的需求，去编写单独一条脚本难度并不是很大，但是需要建立一个框架出来，不知道怎么下手。我中间一共是有过3个方案吧。</p><p>我首先想到的是用数据库方案，将xml文本的数据存储到</p>]]></content>
     
@@ -54,7 +54,7 @@
     <link href="http://www.meprotoss.com/undefined/5b1a3186.html"/>
     <id>http://www.meprotoss.com/undefined/5b1a3186.html</id>
     <published>2024-10-21T03:55:52.000Z</published>
-    <updated>2024-10-21T13:01:03.172Z</updated>
+    <updated>2024-11-01T16:30:44.114Z</updated>
     
     <content type="html"><![CDATA[<h2 id="谈谈对ioc的理解"><a href="#谈谈对ioc的理解" class="headerlink" title="谈谈对ioc的理解"></a>谈谈对ioc的理解</h2><ul><li>将手动<strong>创建对象的控制权</strong>交由<strong>外部环境</strong>Spring框架处理</li></ul><h2 id="什么是Bean"><a href="#什么是Bean" class="headerlink" title="什么是Bean?"></a>什么是Bean?</h2><ul><li>代指被IoC容器管理的对象</li></ul><h2 id="将一个类声明为Bean的注解有哪些？"><a href="#将一个类声明为Bean的注解有哪些？" class="headerlink" title="将一个类声明为Bean的注解有哪些？"></a>将一个类声明为Bean的注解有哪些？</h2><ul><li>@Component</li><li>@Repository</li><li>@Service</li><li>@Controller</li></ul><h2 id="Component-和-Bean-的区别是什么？"><a href="#Component-和-Bean-的区别是什么？" class="headerlink" title="@Component 和 @Bean 的区别是什么？"></a>@Component 和 @Bean 的区别是什么？</h2><ul><li>@Component 注解作用于类，而@Bean注解作用于方法</li><li>@Component通常是通过类路径扫描来自动侦测以及<strong>自动装配</strong>到 Spring 容器中（我们可以使用@ComponentScan 注解定义要扫描的路径,从中找出标识了需要装配的类自动装配到 Spring 的 bean 容器中）。@Bean 注解通常是我们在标有该注解的方法中定义产生这个 bean,@Bean告诉了 Spring 这是某个类的实例，当我需要用它的时候还给我。</li><li>@Bean 注解比 @Component 注解的自定义性更强，而且很多地方我们只能通过 @Bean 注解来注册 bean。比如当我们引用第三方库中的类需要装配到 Spring容器时，则只能通过 @Bean来实现</li></ul><h2 id="Autowired-和-Resource-的区别是什么？"><a href="#Autowired-和-Resource-的区别是什么？" class="headerlink" title="@Autowired 和 @Resource 的区别是什么？"></a>@Autowired 和 @Resource 的区别是什么？</h2><ul><li>@Autowired 是 Spring 提供的注解，@Resource 是 JDK 提供的注解。</li><li>Autowired 默认的注入方式为byType（根据类型进行匹配），@Resource默认注入方式为 byName（根据名称进行匹配）。当一个接口存在多个实现类的情况下，@Autowired 和@Resource都需要通过名称才能正确匹配到对应的 Bean。</li><li>Autowired 可以通过 @Qualifier 注解来显式指定名称，@Resource可以通过 name 属性来显式指定名称。</li><li>@Autowired 支持在构造函数、方法、字段和参数上使用。@Resource 主要用于字段和方法上的注入，不支持在构造函数或参数上使用。</li></ul>]]></content>
     
@@ -75,7 +75,7 @@
     <link href="http://www.meprotoss.com/undefined/b97f760e.html"/>
     <id>http://www.meprotoss.com/undefined/b97f760e.html</id>
     <published>2024-10-21T02:43:41.000Z</published>
-    <updated>2024-10-21T03:55:31.019Z</updated>
+    <updated>2024-11-01T16:30:44.114Z</updated>
     
     <content type="html"><![CDATA[<h2 id="什么是线程和进程"><a href="#什么是线程和进程" class="headerlink" title="什么是线程和进程"></a>什么是线程和进程</h2><p>进程：是程序一次执行的过程，是系统运行程序的基本单位。系统一个程序的运行就是一个程序从创建、运行到消亡的过程</p><p>线程：在Java中，启动一个main函数就是启动了一个JVM进程，而main函数所在的线程就是这个进程中的一个线程，也称为主线程</p><blockquote><p>[!TIP]<br>用户线程和内核线程的区别和特点主要体现在：1.创建线程和切换线程的成本 2.能否利用多核</p></blockquote><h2 id="线程和进程的区别"><a href="#线程和进程的区别" class="headerlink" title="线程和进程的区别"></a>线程和进程的区别</h2><ol><li>进程是独立的，但是线程之间则不一定，同意进程中的多个线程极有可能会相互影响（共享堆和方法区）。</li><li>进程开销大，线程开销小，但是线程不利于资源的管理和保护</li></ol><h2 id="程序计数器的作用-为什么要私有？"><a href="#程序计数器的作用-为什么要私有？" class="headerlink" title="程序计数器的作用,为什么要私有？"></a>程序计数器的作用,为什么要私有？</h2><ol><li>进行代码的流程控制</li><li>记录当前线程执行的位置</li></ol><p>所以计数器的私有化主要是为了保证线程切换后能恢复到正确的执行位置</p><h2 id="虚拟机栈和本地方法栈为什么是私有的？"><a href="#虚拟机栈和本地方法栈为什么是私有的？" class="headerlink" title="虚拟机栈和本地方法栈为什么是私有的？"></a>虚拟机栈和本地方法栈为什么是私有的？</h2><p>为了保证线程中的局部变量不被别的线程访问到</p><h2 id="如何创建线程"><a href="#如何创建线程" class="headerlink" title="如何创建线程"></a>如何创建线程</h2><p>严格来说 Java中只有 <code>new Thread.().start</code>能创建线程</p><h2 id="线程的生命周期"><a href="#线程的生命周期" class="headerlink" title="线程的生命周期"></a>线程的生命周期</h2><ul><li>new 创建了还没start</li><li>runnable 运行 被start等待运行的状态</li><li>blocked 阻塞 等待释放</li><li>waiting 等待，表示需要等待其他线程执行完一些特定动作</li><li>time_waiting 超时等待 可以在等待一定时间之后自行返回</li><li>terminated 线程终止</li></ul><!-- TODO: -->]]></content>
     
