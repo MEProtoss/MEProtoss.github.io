@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.meprotoss.com/undefined/b97f760e.html</loc>
+    
+    <lastmod>2024-11-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://www.meprotoss.com/undefined/3f2382d7.html</loc>
     
     <lastmod>2024-11-10</lastmod>
@@ -48,15 +57,6 @@
   
   <url>
     <loc>http://www.meprotoss.com/undefined/6bdd1875.html</loc>
-    
-    <lastmod>2024-11-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.meprotoss.com/undefined/b97f760e.html</loc>
     
     <lastmod>2024-11-01</lastmod>
     
@@ -301,7 +301,7 @@
 
   <url>
     <loc>http://www.meprotoss.com/</loc>
-    <lastmod>2024-11-10</lastmod>
+    <lastmod>2024-11-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -309,14 +309,14 @@
   
   <url>
     <loc>http://www.meprotoss.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2024-11-10</lastmod>
+    <lastmod>2024-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.meprotoss.com/tags/%E5%85%AB%E8%82%A1/</loc>
-    <lastmod>2024-11-10</lastmod>
+    <lastmod>2024-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
